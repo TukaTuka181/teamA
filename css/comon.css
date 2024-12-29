@@ -30,7 +30,7 @@ img {
 }
 
 main{
-  background-image: url("../img/Image\ \(7\).jpg");
+  background-image: url("../img/backgroundImage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
