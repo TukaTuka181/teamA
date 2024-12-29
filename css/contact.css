@@ -1,0 +1,26 @@
+#contact_form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+form > *{
+    font-size: 1rem;
+}
+form > .input_area{
+  background-color: #e4e4e4;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  resize: none;
+}
+form > .input_area::placeholder{
+  color: #868686;
+}
+.must{
+    color: red;
+}
+
+/* スライドショーの高さ調整 */
+@media (max-width: 767px) {
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&" />
+    <link href="../img/sightIcon.jpg" rel="icon">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="../css/index.css">
+  <style>
+    .slide_window{
+      margin: 0 auto;
+      width: 90dvw;
+      max-width: 100%;
+      max-height: 80dvh;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 10px;
+      position: relative;
+    }
+    .swiper{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      margin: 0;
+    }
+    .swiper-slide{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .arrow{
+      color: rgba(0, 0, 0, 0.5);
+      font-weight: bold;
+    }
+    .swiper-pagination-bullet{
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 15px;
+      width: 15px;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>swiper 使用</h1>
+  <div class="slide_window">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <img id="slide_0" class="swiper-slide" src="../img/Banner_Campaign.jpg" alt="プレゼントキャンペーン">
+          <img id="slide_1" class="swiper-slide" src="../img/Banner_Free.jpg" alt="送料無料">
+          <img id="slide_2" class="swiper-slide" src="../img/Banner_New.jpg" alt="新作紹介">
+        </div><!-- /swiper-wrapper -->
+      </div><!-- /swiper -->
+      <div class="arrow-box">
+        <div class="swiper-button-prev arrow"></div>
+        <div class="swiper-button-next arrow"></div>
+      </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  
+  <h1>swiper 未使用</h1>
+  <div id="slide_show_window">
+    <div id="slide_show">
+        <img id="slide_2_alternative" class="advertisement" src="../img/Banner_New.jpg" alt="新作紹介">
+        <img id="slide_0" class="advertisement" src="../img/Banner_Campaign.jpg" alt="プレゼントキャンペーン">
+        <img id="slide_1" class="advertisement" src="../img/Banner_Free.jpg" alt="送料無料">
+        <img id="slide_2" class="advertisement" src="../img/Banner_New.jpg" alt="新作紹介">
+        <img id="slide_0_alternative" class="advertisement" src="../img/Banner_Campaign.jpg" alt="プレゼントキャンペーン">
+    </div>
+    <div id="btn_box">
+        <button class="slide_btn" onclick="to_slide(0)"></button>
+        <button class="slide_btn" onclick="to_slide(1)"></button>
+        <button class="slide_btn" onclick="to_slide(2)"></button>
+    </div>
+    <div id="arrow_box">
+        <span id="arrow_left" class="material-symbols-outlined" onclick="to_slide(index-1)">
+            chevron_left
+        </span>
+        <span id="arrow_right" class="material-symbols-outlined" onclick="to_slide(index+1)">
+            chevron_right
+        </span>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="../js/slide.js"></script>
+<script>
+  
+const mySwiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  spaceBetween: 24,
+  loop: true,
+  grabCursor: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+   delay: 5000,
+ },
+});
+</script>
+</body>
+</html>

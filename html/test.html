@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&" />
+    <link href="../img/sightIcon.jpg" rel="icon">
+    <link href="../css/comon.css" rel="stylesheet">
+    <title>チームA</title>
+    <style>
+        html{
+            margin: 1px;
+        }
+        #slide_window{
+            margin: 0 auto;
+  width: 90dvw;
+  max-width: 100%;
+  height: 80dvh;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 10px;
+}
+        
+        .triangles_box {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d; /* 3D空間を維持 */
+            transition: transform 1s ease-in-out;
+            transform-origin: 300px 0% calc(-350px / 2);
+        }
+
+        .slide {
+            object-fit: cover;
+            position: absolute;
+            opacity: 0.8;
+        }
+
+        .slide_1 {
+            background-color: red;
+            transform: rotateX(0deg) translateZ(0px); /* 前面 */
+        }
+
+        .slide_2 {
+            background-color: blue;
+            transform: rotateY(120deg) translateX(100%);
+            transform-origin: right;
+        }
+
+        .slide_3 {
+            background-color: yellow;
+            transform: rotateY(-120deg) translateX(-100%);
+            transform-origin: left;
+        }
+        button{
+            position: absolute;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="main_parent">
+            <div id="slide_window">
+                <div id="a" class="triangles_box">
+                    <img id="slide_0" class="advertisement slide_1 slide" src="../img/Banner_Campaign.jpg" alt="">
+                    <img id="slide_1" class="advertisement slide_2 slide" src="../img/Banner_Free.jpg" alt="">
+                    <img id="slide_2" class="advertisement slide_3 slide" src="../img/Banner_New.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <button onclick="b()"></button>
+    <script>
+        const a = document.getElementById("a");
+        let index = 1;
+        function b(){
+            a.style.transform = `rotateY(-${index * 120}deg)`;
+            index++;
+        }
+    </script>
+</body>
+</html>

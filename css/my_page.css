@@ -1,0 +1,39 @@
+
+#main_parent{
+  min-height: 90dvh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top_icon {
+    font-size: 96px;
+}
+#bottom_box{
+   display: grid; 
+   grid-template-columns: 1fr 1fr;
+   justify-content: center;
+   gap: 10px;
+}
+.menu_btn{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 32px;
+    box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 10px;
+    color: #432;
+}
+.bottom_icon{
+    font-size: 48px;
+}
+.menu_btn h4{
+    margin: 0;
+}
+
+/* スライドショーの高さ調整 */
+@media (max-width: 767px) {
+    .menu_btn{
+        padding: 15px 10px;
+    }
+}

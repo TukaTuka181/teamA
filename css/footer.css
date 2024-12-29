@@ -1,0 +1,37 @@
+/* footer */
+
+#footer_parent {
+    background-color: rgb(255, 208, 208);
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #logo_footer {
+    padding: 3em;
+  }
+  
+  .footer_link{
+    color: #000;
+  }
+  
+  #copy_right {
+    margin: 0 auto;
+    text-align: center;
+    padding: 7px;
+  }
+  
+  /* モバイルデバイス向けヘッダーメニュー */
+  @media (max-width: 767px) {
+    .footer_link{
+      margin-bottom: 20px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .content {
+      flex-direction: column;
+    }
+  }
