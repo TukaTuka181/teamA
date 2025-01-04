@@ -55,6 +55,9 @@
 .name{
   margin-bottom: 0;
 }
+.creator{
+  margin-top: 0;
+}
 
 .price {
   border-bottom: 1px solid #000;
