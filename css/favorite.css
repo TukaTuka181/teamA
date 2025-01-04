@@ -18,20 +18,22 @@
 }
 .product_box{
     border-top: 2px solid #4e4e4e;
+    padding: 30px 0;
 }
 .product_box:first-child{
     border: none;
 }
 .product{
     display: flex;
-    padding: 20px 0;
 }
 .info{
     margin-left: 20px;
     display: flex;
     align-items: center;
 }
-
+.info_bottom{
+    text-align: left;
+}
 .info_bottom > * {
     display: inline;
     padding: 0 10px;
@@ -39,7 +41,7 @@
 }
 .price {
     border-bottom: 1px solid #000;
-    display: inline;
+    width: fit-content;
 }
 .description {
     max-width: 600px;
@@ -67,7 +69,7 @@
     
 }
 
-@media (max-width: 767px){
+@media (max-width: 426px){
     .info_bottom{
         display: flex;
         flex-direction: column;
