@@ -9,7 +9,7 @@
 
 #msg_box{
     width: 90dvw;
-    max-width: 50%;
+    max-width: 100%;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
     padding: 20px;
@@ -21,7 +21,7 @@
     font-size: 50px;
 }
 
-#msg_box a{
+#back_anchor{
     color: #000;
     border-bottom: 1px solid #000;
 }

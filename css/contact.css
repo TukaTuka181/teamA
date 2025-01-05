@@ -8,7 +8,7 @@
 #contact_form{
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 50%;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
   padding: 20px;
@@ -33,13 +33,14 @@ form > .input_area::placeholder{
 }
 #submit_btn{
   background-color: rgba(255, 255, 255, 0.0);
+  border: 2px solid #000;
   border-radius: 5px;
   width: 50%;
   margin: 0 auto;
 }
 
 #faq{
-  width: 100%;
+  width: 50%;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
   padding: 20px;
@@ -79,7 +80,18 @@ form > .input_area::placeholder{
   padding: 10px;
   margin: 10px 0px;
 }
+button{
+  cursor: pointer;
+  color: #000;
+
+}
 
 /* スライドショーの高さ調整 */
 @media (max-width: 767px) {
+  #contact_form{
+    width: 100%;
+  }
+  #faq{
+    width: 100%;
+  }
 }
