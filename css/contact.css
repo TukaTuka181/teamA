@@ -29,7 +29,7 @@ form > .input_area::placeholder{
   color: #868686;
 }
 .must{
-    color: red;
+  color: red;
 }
 #submit_btn{
   background-color: rgba(255, 255, 255, 0.0);
@@ -86,7 +86,6 @@ button{
 
 }
 
-/* スライドショーの高さ調整 */
 @media (max-width: 767px) {
   #contact_form{
     width: 100%;
