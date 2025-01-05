@@ -74,20 +74,35 @@
         
             <h2>よくある質問（FAQ）</h2>
             <div id="faq">
-                <details>
-                    <summary>Q: 商品の配送にどのくらい時間がかかりますか？</summary>
-                    <p>A: 通常、3～5営業日でお届けします。ただし、地域や配送状況により多少前後する場合がございます。</p>
-                </details>
+                <button class="faq_box" onclick="toggleAccordion(0)">
+                    <div class="summary">
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                        </span>
+                       <h3>Q: 商品の配送にどのくらい時間がかかりますか？</h3>
+                    </div>
+                    <div class="details">A: 通常、3～5営業日でお届けします。ただし、地域や配送状況により多少前後する場合がございます。</div>
+                </button>
+
+                <button class="faq_box" onclick="toggleAccordion(1)">
+                    <div class="summary">
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                        </span>
+                        <h3>Q: 支払い方法は何がありますか？</h3>
+                    </div>
+                    <div class="details">A: クレジットカード、銀行振込、代引きなどがご利用いただけます。</div>
+                </button>
         
-                <details>
-                    <summary>Q: 支払い方法は何がありますか？</summary>
-                    <p>A: クレジットカード、銀行振込、代引きなどがご利用いただけます。</p>
-                </details>
-        
-                <details>
-                    <summary>Q: 返品や交換は可能ですか？</summary>
-                    <p>A: 商品到着後7日以内であれば可能です。詳細は返品ポリシーをご確認ください。</p>
-                </details>
+                <button class="faq_box" onclick="toggleAccordion(2)">
+                    <div class="summary">
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                        </span>
+                        <h3>Q: 返品や交換は可能ですか？</h3>
+                    </div>
+                    <div class="details">A: 商品到着後7日以内であれば可能です。詳細は返品ポリシーをご確認ください。</div>
+                </button>
             </section>
         </div>
     </main>
@@ -106,7 +121,7 @@
             <p id="copy_right">&copy;pictsuba.com</p>
         </div>
     </footer>
-    <script src="../js/slide.js"></script>
+    <script src="../js/accordion_menu.js"></script>
     <script src="../js/comon.js"></script>
 </body>
 </html>
