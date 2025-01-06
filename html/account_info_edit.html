@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&" />
     <link href="../img/sightIcon.jpg" rel="icon">
     <link href="../css/comon.css" rel="stylesheet">
-    <link href="../css/contact.css" rel="stylesheet">
+    <link href="../css/account_info_edit.css" rel="stylesheet">
     <title>チームA</title>
 </head>
 <body>
@@ -47,63 +47,40 @@
             <div id="bg_cover"></div>
         </div>
     </header>
-    
     <main>
         <div id="main_parent">
-            <div id="contact">
-                <h2>お問い合わせフォーム</h2>
-                <form id="contact_form" action="./contact_comp.html">
-                    <label for="name">
-                        <h4>お名前<span class="must">(必須)</span></h4>
-                    </label>
-                    <input class="input_area" type="text" id="name" name="name" placeholder="例: 山田 太郎" required><br>
+            <h2>アカウント情報 編集</h2>
+                
+            <div id="info_window">
+                <form id="info_form" action="./account_info.html">
+                    <label for="name"><h4>お名前</h4></label>
+                    <input type="text" name="name" class="info_box">
 
-                    <label for="email">
-                        <h4>メールアドレス<span class="must">(必須)</span></h4>
-                    </label>
-                    <input class="input_area" type="email" id="email" name="email" placeholder="例: example@example.com" required><br>
-                    
-                    <label for="message">
-                        <h4>お問い合わせ内容<span class="must">(必須)</span></h4>
-                    </label>
-                    <textarea class="input_area" id="message" name="message" rows="5" placeholder="お問い合わせ内容を詳しくご記入ください" required></textarea><br>
-                    
-                    <input id="submit_btn" type="submit" value="送信">
+                    <label for="password"><h4>パスワード</h4></label>
+                    <input type="password" name="password" class="info_box">
+
+                    <label for="phone"><h4>電話番号</h4></label>
+                    <input type="tel" name="phone" class="info_box">
+
+                    <label for="mail"><h4>メールアドレス</h4></label>
+                    <input type="email" name="mail" class="info_box">
+
+                    <label for="age"><h4>年齢</h4></label>
+                    <input type="number" name="age" min="0" class="info_box">
+
+                    <label for="barth_day"><h4>誕生日</h4></label>
+                    <input type="date" class="info_box">
+
+                    <label for="gender"><h4>性別</h4></label>
+                    <select name="gender" class="info_box">
+                        <option value="">男</option>
+                        <option value="dog">女</option>
+                        <option value="cat">回答しない</option>
+                    </select>
+                    <input type="submit" id="submit_btn">
                 </form>
-            </section>
-        
-            <h2>よくある質問（FAQ）</h2>
-            <div id="faq">
-                <button class="faq_box" onclick="toggleAccordion(0)">
-                    <div class="summary">
-                        <span class="material-symbols-outlined">
-                            arrow_drop_down
-                        </span>
-                       <h3>Q: 商品の配送にどのくらい時間がかかりますか？</h3>
-                    </div>
-                    <div class="details">A: 通常、3～5営業日でお届けします。ただし、地域や配送状況により多少前後する場合がございます。</div>
-                </button>
-
-                <button class="faq_box" onclick="toggleAccordion(1)">
-                    <div class="summary">
-                        <span class="material-symbols-outlined">
-                            arrow_drop_down
-                        </span>
-                        <h3>Q: 支払い方法は何がありますか？</h3>
-                    </div>
-                    <div class="details">A: クレジットカード、銀行振込、代引きなどがご利用いただけます。</div>
-                </button>
-        
-                <button class="faq_box" onclick="toggleAccordion(2)">
-                    <div class="summary">
-                        <span class="material-symbols-outlined">
-                            arrow_drop_down
-                        </span>
-                        <h3>Q: 返品や交換は可能ですか？</h3>
-                    </div>
-                    <div class="details">A: 商品到着後7日以内であれば可能です。詳細は返品ポリシーをご確認ください。</div>
-                </button>
-            </section>
+            </div>
+            <a id="back_anchor" href="./account_info.html">戻る</a>
         </div>
     </main>
     <footer>
@@ -121,7 +98,6 @@
             <p id="copy_right">&copy;pictsuba.com</p>
         </div>
     </footer>
-    <script src="../js/accordion_menu.js"></script>
     <script src="../js/comon.js"></script>
 </body>
 </html>
