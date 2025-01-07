@@ -16,6 +16,16 @@
     padding: 64px;
     box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 10px;
 }
+#window_top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#window_top > a{
+    width: 50%;
+    margin: 0 auto;
+}
 #login_form{
     display: flex;
     flex-direction: column;
@@ -27,6 +37,7 @@ form > input{
     background-color: #c8c8c8;
     border: none;
     margin-bottom: 20px;
+    padding: 10px;
 }
 input[type=password]{
     margin-bottom: 0;
