@@ -41,11 +41,10 @@
   box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 10px;
 }
 
-#products {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+#products{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
 }
 
 .info {
@@ -67,6 +66,7 @@
 
 .product {
   display: flex;
+  justify-content: center;
   padding: 40px 20px;
 }
 .pictura{
@@ -79,6 +79,11 @@
   width: auto;
 }
 
+@media (max-width: 1024px){
+  #products{
+    grid-template-columns: 1fr 1fr;
+  }
+}
 /* スライドショーの高さ調整 */
 @media (max-width: 767px) {
   #slide_show_window {
@@ -87,8 +92,8 @@
   .arrow{
     font-weight: normal;
   }
-  .products{
-    justify-content: center;
+  #products{
+    grid-template-columns: 1fr;
   }
   .product{
     padding: 20px 5px;

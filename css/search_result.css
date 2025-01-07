@@ -12,11 +12,10 @@
   box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 10px;
 }
   
-#products {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+#products{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
 }
 
 .info {
@@ -47,19 +46,23 @@
   width: auto;
 }
 
+@media (max-width: 1024px){
+  #products{
+    grid-template-columns: 1fr 1fr;
+  }
+}
 /* スライドショーの高さ調整 */
 @media (max-width: 767px) {
-  .products{
-    justify-content: center;
+  #slide_show_window {
+    height: 50dvh;
+  }
+  .arrow{
+    font-weight: normal;
+  }
+  #products{
+    grid-template-columns: 1fr;
   }
   .product{
     padding: 20px 5px;
   }
-  /* /* .reverse{
-    flex-direction: row-reverse;
-  } 
-  .reverse .info{
-    margin-right: 0;
-    margin-left: 20px;
-  } */
 }
