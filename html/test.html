@@ -1,70 +1,30 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_drop_down" />
-    <title>アニメーション付きアコーディオン</title>
+    <title>Image in Frame</title>
     <style>
-        * {
+        #frame{
+            width: 136px;
+            height: 162px;
+            background-image: url("../img/gakubuti.png");
+            background-repeat: no-repeat;
+            padding: 25px;
+            background-size: contain;
             box-sizing: border-box;
+            margin: 0;
         }
-        .details{
-            background-color: #fff;
-            width: 600px;
-            padding: 0;
-            margin: 20px;
-            border: none;
-        }
-
-        .summary{
-            border: 2px solid #000;
-        }
-        .content{
-            opacity: 0;
-            background-color: #acacac;
-            width: 100%;
-            max-height: 0px;
-            margin: 10px 0px;
-            transition: max-height 1s ease, opacity 1s ease;
-            overflow: hidden;
-        }
-        .content.view{
-            opacity: 1;
-            max-height: 100px;
+        #frame img{
+            width: calc(100%);
+            height: calc(100%);
+            object-fit: contain;
         }
     </style>
 </head>
 <body>
-    <h1>アニメーション付きアコーディオンメニュー</h1>
-    <button class="details" onclick="toggleAccordion(0)">
-        <div class="summary">
-            <span class="material-symbols-outlined">
-                arrow_drop_down
-            </span>Q: 商品の配送にどのくらい時間がかかりますか？</div>
-        <div class="content">A: 通常、3～5営業日でお届けします。ただし、地域や配送状況により多少前後する場合がございます。</div>
-    </button>
-    <button class="details" onclick="toggleAccordion(1)">
-        <div class="summary">
-            <span class="material-symbols-outlined">
-                arrow_drop_down
-            </span>Q: 商品の配送にどのくらい時間がかかりますか？</div>
-        <div class="content">A: 通常、3～5営業日でお届けします。ただし、地域や配送状況により多少前後する場合がございます。</div>
-    </button>
-    <button class="details" onclick="toggleAccordion(2)">
-        <div class="summary">
-            <span class="material-symbols-outlined">
-                arrow_drop_down
-            </span>Q: 商品の配送にどのくらい時間がかかりますか？</div>
-        <div class="content">A: 通常、3～5営業日でお届けします。ただし、地域や配送状況により多少前後する場合がございます。</div>
-    </button>
-    <script>
-        const contentList = document.querySelectorAll(".content");
-
-        function toggleAccordion(num){
-            contentList[num].classList.toggle("view");
-        }
-    </script>
-    
+    <div id="frame">
+        <img src="../img/pictura.png" alt="">
+    </div>
 </body>
 </html>
