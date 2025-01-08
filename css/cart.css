@@ -1,8 +1,11 @@
 #main_parent{
     min-height: 90dvh;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-#cart_window{
+#main_window{
     width: 100%;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
@@ -99,6 +102,11 @@ input[type=submit]{
     border: none;
     border-radius: 5px;
 }
+
+#bag_icon{
+    font-size: 96px;
+}
+
 @media (max-width: 767px){
     .product{
         flex-direction: column;
