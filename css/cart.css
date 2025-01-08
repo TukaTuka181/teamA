@@ -1,0 +1,124 @@
+#main_parent{
+    min-height: 90dvh;
+    text-align: center;
+}
+#cart_window{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 30px 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 10px;
+}
+.cart_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #4e4e4e;
+    padding: 30px 0;
+}
+.cart_box:first-child{
+    border: none;
+}
+.checkbox{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid #3a3a3a;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+.product_box {
+    margin-bottom: 50px;
+}
+.product{
+    display: flex;
+    align-items: center;
+}
+.frame{
+    width: 136px;
+    height: 162px;
+    min-width: 136px;
+    background-image: url("../img/gakubuti.png");
+    background-repeat: no-repeat;
+    padding: 23px;
+    background-size: contain;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.draw_area{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+.frame img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.info{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.info_bottom{
+    text-align: left;
+}
+.info_bottom > * {
+    display: inline;
+    padding: 0 10px;
+    margin: 0;
+}
+.product_bottom{
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+}
+.product_bottom > input{
+    width: 50px;
+}
+.description {
+    max-width: 600px;
+    display: block;
+}
+.price {
+    border-bottom: 1px solid #000;
+    width: fit-content;
+    margin: 0 20px;
+}
+input[type=submit]{
+    margin: 20px;
+    padding: 5px 10px;
+    background-color: #ff0000;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+@media (max-width: 767px){
+    .product{
+        flex-direction: column;
+    }
+    .info{
+        margin:0;
+    }
+    .info_bottom{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .info_bottom > * {
+        padding: 0;
+        display: inline;
+    }
+    .description{
+        display: none;
+    }
+    .product_bottom{
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&" />
+    <link href="../img/sightIcon.jpg" rel="icon">
+    <link href="../css/comon.css" rel="stylesheet">
+    <link href="../css/cart.css" rel="stylesheet">
+    <title>チームA</title>
+</head>
+<body>
+    <header>
+        <div id="nav_parent">
+            <div id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="./index.html" id="header_logo">
+                <img src="../img/pi.kuro.l.png" alt="ロゴ">
+            </a>
+            <div id="search_box">
+                <form method="get" id="search_product_form" action="./search_result.html">
+                    <input id="search_word" name="search_word" type="text" placeholder="キーワードを入力">
+                    <button id="search_btn">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </button>
+                </form>
+            </div>
+            <!-- pc用サイト内リンク -->
+            <div id="pc_menu">
+                <a href="./cart.html" class="menu_icon"><img class="nav_icon" src="../img/UI.ks-to.png" alt="カート"></a>
+                <a href="./login.html" class="menu_icon"><img class="nav_icon" src="../img/UIroguin.png" alt="ログイン"></a>
+                <a href="./my_page.html" class="menu_icon"><img class="nav_icon" src="../img/UI.account.png" alt="マイページ"></a>
+            </div>
+            <!-- モバイル用サイト内リンク -->
+            <div id="mobile_menu">
+                <a href="./cart.html">カート</a>
+                <a href="./login">ログイン</a>
+                <a href="./my_page.html">マイページ</a>
+                <a href="./contact.html">お問い合わせ</a>
+            </div>
+            <a href="./cart.html" id="mobile_icon" class="cart menu_icon"><img src="../img/UI.ks-to.png" alt="カート"></a>
+            <div id="bg_cover"></div>
+        </div>
+    </header>
+    
+    <main>
+        <div id="main_parent">
+            <h2>カート</h2>
+            <form action="" id="cart_window">
+                <div class="cart_box">
+                    <div class="box_left">
+                        <input type="checkbox" name="is_bay" class="checkbox" checked>
+                    </div>
+                    <div class="box_right">
+                        <a href="" class="product_box">
+                            <div class="product">
+                                <div class="frame">
+                                    <div class="draw_area">
+                                        <img src="../img/pictura.png" alt="絵画">
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <div class="info_bottom">
+                                        <h4 class="name">タイトル名</h4>
+                                        <p class="creator">作者名</p>
+                                        <br>
+                                        <p class="description">
+                                            text text text text text text text text text text text text
+                                            text text text text text text text text text text text text
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="product_bottom">
+                            <h4 class="price">￥値段</h4>
+                            <label for="quantity1">数量：</label>
+                            <input type="number" id="quantity1" name="quantity1" min="1" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart_box">
+                    <div class="box_left">
+                        <input type="checkbox" name="is_bay" class="checkbox" checked>
+                    </div>
+                    <div class="box_right">
+                        <a href="" class="product_box">
+                            <div class="product">
+                                <div class="frame">
+                                    <div class="draw_area">
+                                        <img src="../img/pictura.png" alt="絵画">
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <div class="info_bottom">
+                                        <h4 class="name">タイトル名</h4>
+                                        <p class="creator">作者名</p>
+                                        <br>
+                                        <p class="description">
+                                            text text text text text text text text text text text text
+                                            text text text text text text text text text text text text
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="product_bottom">
+                            <h4 class="price">￥値段</h4>
+                            <label for="quantity2">数量：</label>
+                            <input type="number" id="quantity2" name="quantity2" min="1" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart_box">
+                    <div class="box_left">
+                        <input type="checkbox" name="is_bay" class="checkbox" checked>
+                    </div>
+                    <div class="box_right">
+                        <a href="" class="product_box">
+                            <div class="product">
+                                <div class="frame">
+                                    <div class="draw_area">
+                                        <img src="../img/pictura.png" alt="絵画">
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <div class="info_bottom">
+                                        <h4 class="name">タイトル名</h4>
+                                        <p class="creator">作者名</p>
+                                        <br>
+                                        <p class="description">
+                                            text text text text text text text text text text text text
+                                            text text text text text text text text text text text text
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="product_bottom">
+                            <h4 class="price">￥値段</h4>
+                            <label for="quantity3">数量：</label>
+                            <input type="number" id="quantity3" name="quantity3" min="1" required>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="submit" value="購入へ進む">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div id="footer_parent">
+            <div class="content">
+                <a href="./index.html" id="logo_footer">
+                    <img src="../img/pi.kuro.l 1.png" alt="フッターのロゴ">
+                </a>
+                <a href="./registration.html" class="footer_link">新規会員登録</a>
+                <a href="./contact.html" class="footer_link">お問い合わせ</a>
+                <a href="./about_us.html" class="footer_link">会社概要</a>
+                <a href="./rule.html" class="footer_link">利用規約</a>
+                <a href="./privacy_policy.html" class="footer_link">プライバシーポリシー</a>
+            </div>
+            <p id="copy_right">&copy;pictsuba.com</p>
+        </div>
+    </footer>
+    <script src="../js/comon.js"></script>
+</body>
+</html>
