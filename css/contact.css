@@ -1,5 +1,11 @@
+#main_parent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #contact{
-  width: 100%;
+  width: 50%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -8,7 +14,7 @@
 #contact_form{
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
   padding: 20px;
@@ -87,7 +93,7 @@ button{
 }
 
 @media (max-width: 767px) {
-  #contact_form{
+  #contact{
     width: 100%;
   }
   #faq{
