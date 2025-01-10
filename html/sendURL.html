@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&" />
     <link href="../img/sightIcon.jpg" rel="icon">
     <link href="../css/comon.css" rel="stylesheet">
-    <link href="../css/login.css" rel="stylesheet">
+    <link href="../css/sendURL.css" rel="stylesheet">
     <title>チームA</title>
 </head>
 <body>
@@ -17,19 +17,14 @@
                     <a href="./index.html">
                         <img src="../img/pi.kuro.l.png" alt="ロゴ">
                     </a>
-                    <h2>ログイン</h2>
+                    <h2>確認URLを送信するメールアドレスを入力してください</h2>
                 </div>
-                <form id="login_form" action="./index.html">
-                    <label for="mail">メールアドレス</label>
+                <form id="sendURL_form" action="./reset_password.html">
                     <input type="email" name="mail" required>
 
-                    <label for="password">パスワード</label>
-                    <input type="password" name="password" required>
-                    <a href="sendURL.html" class="anchor">パスワードをお忘れですか？</a>
-
-                    <input type="submit" value="ログイン">
-                    <a href="registration.html">アカウントの作成</a>
+                    <input type="submit" value="送信">
                 </form>
+                <a href="./login.html" class="back_anchor">戻る</a>
             </div>
         </div>
     </main>

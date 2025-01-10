@@ -42,6 +42,9 @@ main{
   margin: 0 auto;
   padding: 16px 0;
 }
+input[type=submit], button{
+  cursor: pointer;
+}
 
 /* 共通部分
 ------------------------------- */

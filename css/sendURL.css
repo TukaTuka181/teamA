@@ -26,7 +26,7 @@
     width: 50%;
     margin: 0 auto;
 }
-#login_form{
+#sendURL_form{
     display: flex;
     flex-direction: column;
 }
@@ -54,6 +54,10 @@ input[type=submit]{
     margin: 20px 0;
     padding: 10px;
     border-radius: 5px;
+}
+.back_anchor{
+    text-decoration: underline;
+    text-align: center;
 }
 @media (max-width: 767px){
     #main_window{
