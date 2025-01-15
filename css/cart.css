@@ -93,7 +93,7 @@
 }
 .quantity_area > input{
     width: 3em;
-    font-size: 1rem;
+    font-size: 1rem-;
 }
 
 .price {

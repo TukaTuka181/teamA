@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&" />
     <link href="../img/sightIcon.jpg" rel="icon">
     <link href="../css/comon.css" rel="stylesheet">
-    <link href="../css/my_page.css" rel="stylesheet">
+    <link href="../css/address_payment_info.css" rel="stylesheet">
     <title>チームA</title>
 </head>
 <body>
@@ -47,47 +47,69 @@
             <div id="bg_cover"></div>
         </div>
     </header>
+    
     <main>
         <div id="main_parent">
-            <div id="top_box">
-                <h2>マイページ</h2>
-                <span class="material-symbols-outlined top_icon">
-                    account_circle
-                </span>
-                <h4 id="account_name">"アカウント名"</h3>
+            <h2>決済情報</h2>
+            <div id="main_window">
+                <div class="section">
+                    <div class="section_title">
+                        <span class="material-symbols-outlined">
+                            credit_card
+                        </span>
+                        <h3>クレジットカード</h3>
+                    </div>
+                    <div class="payment items">
+                        <div class="item">
+                            <div class="item_info">カード番号：************0000</div>
+                            <button class="delete_button">削除</button>
+                        </div>
+                        <div class="item">
+                            <div class="item_info">カード番号：************0000</div>
+                            <button class="delete_button">削除</button>
+                        </div>
+                    </div>
+                    <button id="add_button">
+                        新しいカードを追加
+                        <span class="material-symbols-outlined">
+                            add
+                        </span>
+                    </button>
+                </div>
+                <!-- クレジットカード入力フォーム -->
+                <div id="modal_window">
+                    <div id="modal_content">
+                        <span class="material-symbols-outlined" id="close_icon">
+                            close
+                        </span>
+                        <h2>クレジットカードの追加</h2>
+                        <form action="" class="add_form">
+                            <div class="input_box">
+                                <label for="name"><h4>お名前<span class="must">*</span></h4></label>
+                                <input type="text" name="name" required>
+                            </div>
+
+                            <div class="input_box">
+                                <label for="number"><h4>カード番号<span class="must">*</span></h4></label>
+                                <input type="number" name="number" required>
+                            </div>
+
+                            <div class="input_box">
+                                <label for="expire"><h4>有効期限<span class="must">*</span></h4></label>
+                                <input type="month" name="expire" required>
+                            </div>
+
+                            <div class="input_box">
+                                <label for="security_code">セキュリティコード</label>
+                                <input type="number" name="security_code" required>
+                            </div>
+
+                            <input type="submit" value="追加">
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div id="bottom_box">
-                <a href="./order_history.html" class="menu_btn">
-                    <span class="material-symbols-outlined bottom_icon">
-                        menu_book
-                    </span>
-                    <h3>注文履歴</h3>
-                </a>
-                <a href="./favorite.html" class="menu_btn">
-                    <span class="material-symbols-outlined bottom_icon">
-                        star
-                    </span>
-                    <h3>お気に入り</h3>
-                </a>
-                <a href="./payment_info.html" class="menu_btn">
-                    <span class="material-symbols-outlined bottom_icon">
-                        credit_card_gear
-                    </span>
-                    <h3>決済情報</h3>
-                </a>
-                <a href="account_info.html" class="menu_btn">
-                    <span class="material-symbols-outlined bottom_icon">
-                        manage_accounts
-                    </span>
-                    <h3>アカウント情報</h3>
-                </a>
-                <a href="address_info.html" class="menu_btn">
-                    <span class="material-symbols-outlined bottom_icon">
-                        house
-                    </span>
-                    <h3>住所情報</h3>
-                </a>
-            </div>
+            <a href="./my_page.html" id="back_anchor">マイページへ</a>
         </div>
     </main>
     <footer>
@@ -105,6 +127,7 @@
             <p id="copy_right">&copy;pictsuba.com</p>
         </div>
     </footer>
+    <script src="../js/modal_window.js"></script>
     <script src="../js/comon.js"></script>
 </body>
 </html>

@@ -19,7 +19,7 @@ html.nonscroll{
 body{
   font-family: "";
   line-height: 1.7;
-  color: #432;
+  color: #000;
   margin: 0;
 }
 a {
@@ -39,11 +39,16 @@ main{
 #main_parent{
   width: 90dvw;
   max-width: 1000px;
+  min-height: 90dvh;
   margin: 0 auto;
   padding: 16px 0;
 }
 input[type=submit], button{
   cursor: pointer;
+}
+
+html::-webkit-scrollbar{
+  display: none;
 }
 
 /* 共通部分

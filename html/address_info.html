@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&" />
+    <link href="../img/sightIcon.jpg" rel="icon">
+    <link href="../css/comon.css" rel="stylesheet">
+    <link href="../css/address_payment_info.css" rel="stylesheet">
+    <title>チームA</title>
+</head>
+<body>
+    <header>
+        <div id="nav_parent">
+            <div id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="./index.html" id="header_logo">
+                <img src="../img/pi.kuro.l.png" alt="ロゴ">
+            </a>
+            <div id="search_box">
+                <form method="get" id="search_product_form" action="./search_result.html">
+                    <input id="search_word" name="search_word" type="text" placeholder="キーワードを入力">
+                    <button id="search_btn">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </button>
+                </form>
+            </div>
+            <!-- pc用サイト内リンク -->
+            <div id="pc_menu">
+                <a href="./cart.html" class="menu_icon"><img class="nav_icon" src="../img/UI.ks-to.png" alt="カート"></a>
+                <a href="./login.html" class="menu_icon"><img class="nav_icon" src="../img/UIroguin.png" alt="ログイン"></a>
+                <a href="./my_page.html" class="menu_icon"><img class="nav_icon" src="../img/UI.account.png" alt="マイページ"></a>
+            </div>
+            <!-- モバイル用サイト内リンク -->
+            <div id="mobile_menu">
+                <a href="./cart.html">カート</a>
+                <a href="./login">ログイン</a>
+                <a href="./my_page.html">マイページ</a>
+                <a href="./contact.html">お問い合わせ</a>
+            </div>
+            <a href="./cart.html" id="mobile_icon" class="cart menu_icon"><img src="../img/UI.ks-to.png" alt="カート"></a>
+            <div id="bg_cover"></div>
+        </div>
+    </header>
+    
+    <main>
+        <div id="main_parent">
+            <h2>住所情報</h2>
+            <div id="main_window">
+                <div class="section">
+                    <div class="section_title">
+                        <span class="material-symbols-outlined">
+                            house
+                        </span>
+                        <h3>住所</h3>
+                    </div>
+                    <div class="address items">
+                        <div class="item">
+                            <div class="item_info">
+                                〒000_0000<br>
+                                群馬県 太田市 東貝沢町<br>
+                                〇〇〇〇−〇
+                            </div>
+                            <button class="delete_button">削除</button>
+                        </div>
+                        <div class="item">
+                            <div class="item_info">
+                                〒000_0000<br>
+                                群馬県 太田市 長貝沢町<br>
+                                〇〇〇〇−〇
+                            </div>
+                            <button class="delete_button">削除</button>
+                        </div>
+                    </div>
+                    <button id="add_button">
+                        新しい住所を追加
+                        <span class="material-symbols-outlined">
+                            add
+                        </span>
+                    </button>
+                </div>
+                <!-- 住所入力フォーム -->
+                <div id="modal_window">
+                    <div id="modal_content">
+                        <span class="material-symbols-outlined" id="close_icon">
+                            close
+                        </span>
+                        <h2>住所の追加</h2>
+                        <form action="" id="address_form" class="add_form">
+                            <div class="input_box">
+                                <label for="zip_code"><h4>郵便番号<span class="must">*</span></h4></label>
+                                <div id="address_completion_area">
+                                    <input type="number" name="zip_code" id="zip_code" placeholder="ハイフンなし" maxlength="7" required>
+                                    <button id="address_completion_btn">住所検索</button>
+                                </div>
+                                <p id="error_msg"></p>
+                            </div>
+
+                            <div class="input_box">
+                                <label for="pref"><h4>都道府県<span class="must">*</span></h4></label>
+                                <input type="text" name="pref" id="pref" required>
+                            </div>
+
+                            <div class="input_box">
+                                <label for="municipalities"><h4>市区町村<span class="must">*</span></h4></label>
+                                <input type="text" name="municipalities" id="municipalities" required>
+                            </div>
+
+                            <div class="input_box">
+                                <label for="street"><h4>番地<span class="must">*</span></h4></label>
+                                <input type="text" name="street" required>
+                            </div>
+
+                            <div class="input_box">
+                                <label for="building"><h4>建物名</h4></label>
+                                <input type="text" name="building">
+                            </div>
+
+                            <input type="submit" value="追加">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <a href="./my_page.html" id="back_anchor">マイページへ</a>
+        </div>
+    </main>
+    <footer>
+        <div id="footer_parent">
+            <div class="content">
+                <a href="./index.html" id="logo_footer">
+                    <img src="../img/pi.kuro.l 1.png" alt="フッターのロゴ">
+                </a>
+                <a href="./registration.html" class="footer_link">新規会員登録</a>
+                <a href="./contact.html" class="footer_link">お問い合わせ</a>
+                <a href="./about_us.html" class="footer_link">会社概要</a>
+                <a href="./rule.html" class="footer_link">利用規約</a>
+                <a href="./privacy_policy.html" class="footer_link">プライバシーポリシー</a>
+            </div>
+            <p id="copy_right">&copy;pictsuba.com</p>
+        </div>
+    </footer>
+    <script src="../js/modal_window.js"></script>
+    <script src="../js/zipcode.js"></script>
+    <script src="../js/comon.js"></script>
+</body>
+</html>

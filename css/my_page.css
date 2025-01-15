@@ -1,6 +1,5 @@
 
 #main_parent{
-  min-height: 90dvh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -12,28 +11,43 @@
     font-size: 96px;
 }
 #bottom_box{
-   display: grid; 
-   grid-template-columns: 1fr 1fr;
-   justify-content: center;
-   gap: 10px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-sizing: rgba(0, 0, 0, 0.2) 10px 10px 10px;
+    border-radius: 15px;
+    padding: 16px;
 }
 .menu_btn{
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
+    border-bottom: 2px solid #432;
+    width: 75%;
     padding: 32px;
-    box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 10px;
-    color: #432;
+    color: #000;
+    display: flex;
+    justify-content: center;
+}
+.menu_btn:last-child{
+    border-bottom: none;
 }
 .bottom_icon{
-    font-size: 48px;
+    font-size: 2rem;
 }
-.menu_btn h4{
-    margin: 0;
+.menu_btn h3{
+    margin: 0 10px;
+    font-size: 1.25rem;
 }
 
 /* スライドショーの高さ調整 */
 @media (max-width: 767px) {
     .menu_btn{
         padding: 15px 10px;
+    }
+    #bottom_box{
+        width: 100%;
+    }
+    .menu_btn h3{
+        font-size: 1rem;
     }
 }
