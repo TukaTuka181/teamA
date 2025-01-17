@@ -69,7 +69,7 @@
                             <button class="delete_button">削除</button>
                         </div>
                     </div>
-                    <button id="add_button">
+                    <button id="payment_add_button" class="add_button">
                         新しいカードを追加
                         <span class="material-symbols-outlined">
                             add
@@ -77,31 +77,31 @@
                     </button>
                 </div>
                 <!-- クレジットカード入力フォーム -->
-                <div id="modal_window">
-                    <div id="modal_content">
-                        <span class="material-symbols-outlined" id="close_icon">
+                <div id="payment_modal_window" class="modal_window">
+                    <div id="payment_modal_content" class="modal_content">
+                        <span class="material-symbols-outlined close_icon" id="payment_close_icon">
                             close
                         </span>
                         <h2>クレジットカードの追加</h2>
                         <form action="" class="add_form">
                             <div class="input_box">
-                                <label for="name"><h4>お名前<span class="must">*</span></h4></label>
+                                <h4>お名前<span class="must">*</span></h4>
                                 <input type="text" name="name" required>
                             </div>
 
                             <div class="input_box">
-                                <label for="number"><h4>カード番号<span class="must">*</span></h4></label>
+                                <h4>カード番号<span class="must">*</span></h4>
                                 <input type="number" name="number" required>
                             </div>
 
                             <div class="input_box">
-                                <label for="expire"><h4>有効期限<span class="must">*</span></h4></label>
-                                <input type="month" name="expire" required>
+                                <h4>有効期限<span class="must">*</span></h4>
+                                <input type="month" name="expire" id="expire" required>
                             </div>
 
                             <div class="input_box">
-                                <label for="security_code">セキュリティコード</label>
-                                <input type="number" name="security_code" required>
+                                <h4>セキュリティコード<span class="must">*</span></h4>
+                                <input type="number" name="security_code" id="security_code" required>
                             </div>
 
                             <input type="submit" value="追加">
@@ -109,7 +109,6 @@
                     </div>
                 </div>
             </div>
-            <a href="./my_page.html" id="back_anchor">マイページへ</a>
         </div>
     </main>
     <footer>
@@ -127,7 +126,7 @@
             <p id="copy_right">&copy;pictsuba.com</p>
         </div>
     </footer>
-    <script src="../js/modal_window.js"></script>
+    <script src="../js/payment_modal_window.js"></script>
     <script src="../js/comon.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
-const add_button = document.getElementById("add_button");
-const close_icons = document.getElementById("close_icon");
-const modal_window = document.getElementById("modal_window");
-const modal_contents = document.getElementById("modal_content");
+const add_button = document.getElementById("payment_add_button");
+const close_icon = document.getElementById("payment_close_icon");
+const modal_window = document.getElementById("payment_modal_window");
+const modal_content = document.getElementById("payment_modal_content");
 const nonscroll = document.documentElement;
 
 add_button.addEventListener("click", (event) => {
