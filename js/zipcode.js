@@ -1,5 +1,6 @@
 const address_completion_btn = document.getElementById("address_completion_btn");
 const close_icons = document.getElementById("address_close_icon");
+const modal_window = document.getElementById("address_modal_window");
 const zip_code = document.getElementById("zip_code");
 const error_msg = document.getElementById("error_msg");
 

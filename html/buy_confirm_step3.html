@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&" />
+    <link href="../img/sightIcon.jpg" rel="icon">
+    <link href="../css/comon.css" rel="stylesheet">
+    <link href="../css/buy_confirm_step3.css" rel="stylesheet">
+    <title>チームA</title>
+</head>
+<body>
+    <header>
+        <div id="nav_parent">
+            <div id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="./index.html" id="header_logo">
+                <img src="../img/pi.kuro.l.png" alt="ロゴ">
+            </a>
+            <div id="search_box">
+                <form method="get" id="search_product_form" action="./search_result.html">
+                    <input id="search_word" name="search_word" type="text" placeholder="キーワードを入力">
+                    <button id="search_btn">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </button>
+                </form>
+            </div>
+            <!-- pc用サイト内リンク -->
+            <div id="pc_menu">
+                <a href="./cart.html" class="menu_icon"><img class="nav_icon" src="../img/UI.ks-to.png" alt="カート"></a>
+                <a href="./login.html" class="menu_icon"><img class="nav_icon" src="../img/UIroguin.png" alt="ログイン"></a>
+                <a href="./my_page.html" class="menu_icon"><img class="nav_icon" src="../img/UI.account.png" alt="マイページ"></a>
+            </div>
+            <!-- モバイル用サイト内リンク -->
+            <div id="mobile_menu">
+                <a href="./cart.html">カート</a>
+                <a href="./login">ログイン</a>
+                <a href="./my_page.html">マイページ</a>
+                <a href="./contact.html">お問い合わせ</a>
+            </div>
+            <a href="./cart.html" id="mobile_icon" class="cart menu_icon"><img src="../img/UI.ks-to.png" alt="カート"></a>
+            <div id="bg_cover"></div>
+        </div>
+    </header>
+    <main>
+        <div id="main_parent">
+            <div id="main_box">
+                <div id="main_top">
+                    <h2>購入完了</h2>
+                    <div class="progress-bar">
+                        <div class="circle completed">
+                            <span>&#10003;</span>
+                        </div>
+                        <div class="line completed"></div>
+                        <div class="circle completed">
+                            <span>&#10003;</span>
+                        </div>
+                        <div class="line completed"></div>
+                        <div class="circle completed">
+                            <span>&#10003;</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="main_bottom">
+                    <p>
+                        決済が完了しました。<br>
+                        ご利用いただきありがとうございます。
+                    </p>
+                    <a href="./index.html">トップページへ戻る</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer_parent">
+            <div class="content">
+                <a href="./index.html" id="logo_footer">
+                    <img src="../img/pi.kuro.l 1.png" alt="フッターのロゴ">
+                </a>
+                <a href="./registration.html" class="footer_link">新規会員登録</a>
+                <a href="./contact.html" class="footer_link">お問い合わせ</a>
+                <a href="./about_us.html" class="footer_link">会社概要</a>
+                <a href="./rule.html" class="footer_link">利用規約</a>
+                <a href="./privacy_policy.html" class="footer_link">プライバシーポリシー</a>
+            </div>
+            <p id="copy_right">&copy;pictsuba.com</p>
+        </div>
+    </footer>
+    <script src="../js/comon.js"></script>
+</body>
+</html>

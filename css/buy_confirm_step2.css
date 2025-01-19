@@ -1,0 +1,30 @@
+.choosed{
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    padding: 20px;
+}
+.choosed *{
+    margin: 0;
+}
+#main_bottom{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#main_bottom a {
+    display: flex;
+    justify-content: center;
+    transform: translateX(100%);
+    position: absolute;
+}
+
+@media (max-width: 767px){
+    #main_bottom {
+        width: 100%;
+    }
+    #main_bottom a{
+        transform: none;
+    }
+}

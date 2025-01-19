@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&" />
+    <link href="../img/sightIcon.jpg" rel="icon">
+    <link href="../css/comon.css" rel="stylesheet">
+    <link href="../css/buy_confirm.css" rel="stylesheet">
+    <link href="../css/buy_confirm_step2.css" rel="stylesheet">
+    <title>チームA</title>
+</head>
+<body>
+    <header>
+        <div id="nav_parent">
+            <div id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="./index.html" id="header_logo">
+                <img src="../img/pi.kuro.l.png" alt="ロゴ">
+            </a>
+            <div id="search_box">
+                <form method="get" id="search_product_form" action="./search_result.html">
+                    <input id="search_word" name="search_word" type="text" placeholder="キーワードを入力">
+                    <button id="search_btn">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </button>
+                </form>
+            </div>
+            <!-- pc用サイト内リンク -->
+            <div id="pc_menu">
+                <a href="./cart.html" class="menu_icon"><img class="nav_icon" src="../img/UI.ks-to.png" alt="カート"></a>
+                <a href="./login.html" class="menu_icon"><img class="nav_icon" src="../img/UIroguin.png" alt="ログイン"></a>
+                <a href="./my_page.html" class="menu_icon"><img class="nav_icon" src="../img/UI.account.png" alt="マイページ"></a>
+            </div>
+            <!-- モバイル用サイト内リンク -->
+            <div id="mobile_menu">
+                <a href="./cart.html">カート</a>
+                <a href="./login">ログイン</a>
+                <a href="./my_page.html">マイページ</a>
+                <a href="./contact.html">お問い合わせ</a>
+            </div>
+            <a href="./cart.html" id="mobile_icon" class="cart menu_icon"><img src="../img/UI.ks-to.png" alt="カート"></a>
+            <div id="bg_cover"></div>
+        </div>
+    </header>
+    <main>
+        <div id="main_parent">
+            <form action="./buy_confirm_step3.html" id="main_box">
+                <div id="main_top">
+                    <h2>購入確認</h2>
+                    <div class="progress-bar">
+                        <a href="./buy_confirm_step1.html" class="circle completed">
+                            <span>&#10003;</span>
+                        </a>
+                        <div class="line completed"></div>
+                        <div class="circle completed">
+                            <span>&#10003;</span>
+                        </div>
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <section>
+                    <div class="section_title">
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                        <h3>カート内商品</h3>
+                    </div>
+                    <div id="product_list">
+                        <div class="product">
+                            <div class="frame">
+                                <div class="draw_area">
+                                    <img src="../img/pictura.png" alt="絵画">
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h4 class="name">「タイトル名」</h4>
+                                <p class="creator">作者名</p>
+                            </div>
+                            <h4 class="price_area">
+                                ￥値段 × ＊個 = ￥値段
+                            </h4>
+                        </div>
+                        <div class="product">
+                            <div class="frame">
+                                <div class="draw_area">
+                                    <img src="../img/pictura.png" alt="絵画">
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h4 class="name">「タイトル名」</h4>
+                                <p class="creator">作者名</p>
+                            </div>
+                            <h4 class="price_area">
+                                ￥値段 × ＊個 = ￥値段
+                            </h4>
+                        </div>
+                        <div class="product">
+                            <div class="frame">
+                                <div class="draw_area">
+                                    <img src="../img/pictura.png" alt="絵画">
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h4 class="name">「タイトル名」</h4>
+                                <p class="creator">作者名</p>
+                            </div>
+                            <h4 class="price_area">
+                                ￥値段 × ＊個 = ￥値段
+                            </h4>
+                        </div>
+                    </div>
+                    <div id="product_sum">
+                        <h4>合計金額：￥＊＊＊＊</h4>
+                    </div>
+                </section>
+                <section>
+                    <div class="section_title">
+                        <span class="material-symbols-outlined">
+                            house
+                        </span>
+                        <h3>住所</h3>
+                    </div>
+                    <div class="choosed">
+                        〒000_0000<br>
+                        群馬県 太田市 長貝沢町<br>
+                        〇〇〇〇−〇
+                    </div>
+                </section>
+                <section>
+                    <div class="section_title">
+                        <span class="material-symbols-outlined">
+                            payments
+                        </span>
+                        <h3>お支払い方法</h3>
+                    </div>
+                    <!-- クレジットカード支払いを選んだ場合 -->
+                    <!-- <div class="choosed">
+                        <h5>クレジットカード支払い</h5>
+                        <p>カード番号：************0000</p>
+                    </div> -->
+
+                    <!-- 銀行振込を選んだ場合 -->
+                    <div class="choosed">
+                        <h5>銀行振込</h5>
+                    </div>
+                </section>
+                <section>
+                    <div class="section_title">
+                        <span class="material-symbols-outlined">
+                            attach_money
+                        </span>
+                        <h3>ご請求金額</h3>
+                    </div>
+                    <div id="details_amount">
+                        <h4>商品合計</h4><p>＊＊＊</p>
+                        <h4>送料</h4><p>＊＊＊</p>
+                        <h4>ポイント</h4><p>-＊＊＊</p>
+                        <h3 class="total">合計<span>(税込み)</span></h3>
+                        <h3 class="total">￥＊＊＊</h3>
+                    </div>
+                </section>
+                <div id="main_bottom">
+                    <a href="./buy_confirm_step1.html">
+                        <span class="material-symbols-outlined">
+                            chevron_left
+                        </span>
+                        修正
+                    </a>
+                    <input type="submit" value="決済">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div id="footer_parent">
+            <div class="content">
+                <a href="./index.html" id="logo_footer">
+                    <img src="../img/pi.kuro.l 1.png" alt="フッターのロゴ">
+                </a>
+                <a href="./registration.html" class="footer_link">新規会員登録</a>
+                <a href="./contact.html" class="footer_link">お問い合わせ</a>
+                <a href="./about_us.html" class="footer_link">会社概要</a>
+                <a href="./rule.html" class="footer_link">利用規約</a>
+                <a href="./privacy_policy.html" class="footer_link">プライバシーポリシー</a>
+            </div>
+            <p id="copy_right">&copy;pictsuba.com</p>
+        </div>
+    </footer>
+    <script src="../js/comon.js"></script>
+</body>
+</html>

@@ -1,28 +1,32 @@
-const add_button = document.getElementById("address_add_button");
-const close_icon = document.getElementById("address_close_icon");
-const modal_window = document.getElementById("address_modal_window");
-const modal_content = document.getElementById("address_modal_content");
-const nonscroll = document.documentElement;
+const address_add_button = document.getElementById("address_add_button");
+const address_close_icon = document.getElementById("address_close_icon");
+const address_modal_window = document.getElementById("address_modal_window");
+const address_modal_content = document.getElementById("address_modal_content");
+const address_nonscroll = document.documentElement;
 
-add_button.addEventListener("click", (event) => {
+address_add_button.addEventListener("click", (event) => {
     event.preventDefault()
-    modal_window_toggle();
+    show_address();
 });
 
-close_icon.addEventListener("click", (event) => {
+address_close_icon.addEventListener("click", (event) => {
     event.stopPropagation();
-    modal_window_toggle();
+    hidden_address();
 });
 
-modal_content.addEventListener("click", (event) => {
+address_modal_content.addEventListener("click", (event) => {
     event.stopPropagation();
 });
 
-modal_window.addEventListener("click", () => {
-    modal_window_toggle();
+address_modal_window.addEventListener("click", () => {
+    hidden_address();
 });
 
-function modal_window_toggle(){
-    modal_window.classList.toggle("view");
-    nonscroll.classList.toggle("nonscroll");
+function show_address(){
+    address_modal_window.classList.add("view");
+    address_nonscroll.classList.add("nonscroll");
+};
+function hidden_address(){
+    address_modal_window.classList.remove("view");
+    address_nonscroll.classList.remove("nonscroll");
 };
