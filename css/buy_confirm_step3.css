@@ -1,18 +1,3 @@
-#main_parent{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#main_box{
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    padding: 30px;
-    margin: 30px 0;
-    box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 10px;
-    display: flex;
-    flex-direction: column;
-}
 #main_top{
     display: flex;
     flex-direction: column;
