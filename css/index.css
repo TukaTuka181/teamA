@@ -40,6 +40,9 @@
   margin: 30px 0;
   box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 10px;
 }
+#products_window h3{
+  text-align: center;
+}
 
 #products{
   display: grid;
