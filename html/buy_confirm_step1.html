@@ -50,187 +50,188 @@
     <main>
         <div id="main_parent">
             <form action="./buy_confirm_step2.html" id="main_box">
-            <div id="main_top">
-                <h2>購入確認</h2>
-                <div class="progress-bar">
-                    <div class="circle completed">
-                        <span>&#10003;</span>
+                <div id="main_top">
+                    <h2>購入確認</h2>
+                    <div class="progress-bar">
+                        <div class="circle completed">
+                            <span>&#10003;</span>
+                        </div>
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                        <div class="line"></div>
+                        <div class="circle"></div>
                     </div>
-                    <div class="line"></div>
-                    <div class="circle"></div>
-                    <div class="line"></div>
-                    <div class="circle"></div>
                 </div>
-            </div>
-            <section>
-                <div class="section_title">
-                    <span class="material-symbols-outlined">
-                        shopping_cart
-                    </span>
-                    <h3>カート内商品</h3>
-                </div>
-                <div id="product_list">
-                    <div class="product">
-                        <div class="frame">
-                            <div class="draw_area">
-                                <img src="../img/pictura.png" alt="絵画">
+                <section>
+                    <div class="section_title">
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                        <h3>カート内商品</h3>
+                    </div>
+                    <div id="product_list">
+                        <div class="product">
+                            <div class="frame">
+                                <div class="draw_area">
+                                    <img src="../img/pictura.png" alt="絵画">
+                                </div>
                             </div>
-                        </div>
-                        <div class="info">
-                            <h4 class="name">「タイトル名」</h4>
-                            <p class="creator">作者名</p>
-                        </div>
-                        <h4 class="price_area">
-                            ￥値段 × ＊個 = ￥値段
-                        </h4>
-                    </div>
-                    <div class="product">
-                        <div class="frame">
-                            <div class="draw_area">
-                                <img src="../img/pictura.png" alt="絵画">
+                            <div class="info">
+                                <h4 class="name">「タイトル名」</h4>
+                                <p class="creator">作者名</p>
                             </div>
+                            <h4 class="price_area">
+                                ￥値段 × ＊個 = ￥値段
+                            </h4>
                         </div>
-                        <div class="info">
-                            <h4 class="name">「タイトル名」</h4>
-                            <p class="creator">作者名</p>
-                        </div>
-                        <h4 class="price_area">
-                            ￥値段 × ＊個 = ￥値段
-                        </h4>
-                    </div>
-                    <div class="product">
-                        <div class="frame">
-                            <div class="draw_area">
-                                <img src="../img/pictura.png" alt="絵画">
+                        <div class="product">
+                            <div class="frame">
+                                <div class="draw_area">
+                                    <img src="../img/pictura.png" alt="絵画">
+                                </div>
                             </div>
+                            <div class="info">
+                                <h4 class="name">「タイトル名」</h4>
+                                <p class="creator">作者名</p>
+                            </div>
+                            <h4 class="price_area">
+                                ￥値段 × ＊個 = ￥値段
+                            </h4>
                         </div>
-                        <div class="info">
-                            <h4 class="name">「タイトル名」</h4>
-                            <p class="creator">作者名</p>
+                        <div class="product">
+                            <div class="frame">
+                                <div class="draw_area">
+                                    <img src="../img/pictura.png" alt="絵画">
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h4 class="name">「タイトル名」</h4>
+                                <p class="creator">作者名</p>
+                            </div>
+                            <h4 class="price_area">
+                                ￥値段 × ＊個 = ￥値段
+                            </h4>
                         </div>
-                        <h4 class="price_area">
-                            ￥値段 × ＊個 = ￥値段
-                        </h4>
                     </div>
-                </div>
-                <div id="product_sum">
-                    <h4>合計金額：￥＊＊＊＊</h4>
-                </div>
-            </section>
+                    <div id="product_sum">
+                        <h4>合計金額：￥＊＊＊＊</h4>
+                    </div>
+                </section>
 
-            <section>
-                <div class="section_title">
-                    <span class="material-symbols-outlined">
-                        house
-                    </span>
-                    <h3>住所</h3>
-                </div>
-                <div class="choose_list">
-                    <label for="address_radio1" class="choose">
-                        <div class="left_box">
-                            <input type="radio" name="address_radio" id="address_radio1" required>
-                        </div>
-                        <div class="right_box">
-                            <div class="address_info">
-                                〒000_0000<br>
-                                群馬県 太田市 長貝沢町<br>
-                                〇〇〇〇−〇
-                            </div>
-                        </div>
-                    </label>
-                    <label for="address_radio2" class="choose">
-                        <div class="left_box">
-                            <input type="radio" name="address_radio" id="address_radio2" required>
-                        </div>
-                        <div class="right_box">
-                            <div class="address_info">
-                                〒000_0000<br>
-                                群馬県 太田市 長貝沢町<br>
-                                〇〇〇〇−〇
-                            </div>
-                        </div>
-                    </label>
-                </div>
-                
-                <button id="address_add_button" class="add_button">
-                    新しい住所を追加
-                    <span class="material-symbols-outlined">
-                        add
-                    </span>
-                </button>
-            </section>
-
-            <section>
-                <div class="section_title">
-                    <span class="material-symbols-outlined">
-                        payments
-                    </span>
-                    <h3>お支払い方法</h3>
-                </div>
-                <div class="choose_list">
-                    <label for="payment_radio1" class="choose accordion_menu">
-                        <div class="summary">
+                <section>
+                    <div class="section_title">
+                        <span class="material-symbols-outlined">
+                            house
+                        </span>
+                        <h3>住所</h3>
+                    </div>
+                    <div class="choose_list">
+                        <label for="address_radio1" class="choose">
                             <div class="left_box">
-                                <input type="radio" name="payment_radio" id="payment_radio1" required>
+                                <input type="radio" name="address_radio" id="address_radio1" required>
                             </div>
                             <div class="right_box">
-                                クレジットカード支払い
+                                <div class="address_info">
+                                    〒000_0000<br>
+                                    群馬県 太田市 長貝沢町<br>
+                                    〇〇〇〇−〇
+                                </div>
                             </div>
-                        </div>
-                        <div class="details">
-                            <div class="item">
-                                <input type="radio" name="credit_card" id="credit_card1">
-                                <label for="credit_card1">
-                                    <div class="item_info">カード番号：************0000</div>
-                                </label>
+                        </label>
+                        <label for="address_radio2" class="choose">
+                            <div class="left_box">
+                                <input type="radio" name="address_radio" id="address_radio2" required>
                             </div>
-                            <div class="item">
-                                <input type="radio" name="credit_card" id="credit_card2">
-                                <label for="credit_card2">
-                                    <div class="item_info">カード番号：************0000</div>
-                                </label>
+                            <div class="right_box">
+                                <div class="address_info">
+                                    〒000_0000<br>
+                                    群馬県 太田市 長貝沢町<br>
+                                    〇〇〇〇−〇
+                                </div>
                             </div>
-                            <button id="payment_add_button" class="add_button">
-                                新しいカードを追加
-                                <span class="material-symbols-outlined">
-                                    add
-                                </span>
-                            </button>
-                        </div>
-                    </label>
-                    <label for="payment_radio2" class="choose">
-                        <div class="left_box">
-                            <input type="radio" name="payment_radio" id="payment_radio2" required>
-                        </div>
-                        <div class="right_box">
-                            銀行振込
-                        </div>
-                    </label>
-                </div>
-                <div id="point_box">
-                    <input type="checkbox" name="use_point">
-                    <label for="point"></label><h4>ポイントを使う：</h4>
-                    <input type="number" name="point" id="point">
-                </div>
-            </section>
+                        </label>
+                    </div>
+                    
+                    <button id="address_add_button" class="add_button">
+                        新しい住所を追加
+                        <span class="material-symbols-outlined">
+                            add
+                        </span>
+                    </button>
+                </section>
 
-            <section>
-                <div class="section_title">
-                    <span class="material-symbols-outlined">
-                        attach_money
-                    </span>
-                    <h3>ご請求金額</h3>
-                </div>
-                <div id="details_amount">
-                    <h4>商品合計</h4><p>＊＊＊</p>
-                    <h4>送料</h4><p>＊＊＊</p>
-                    <h4>ポイント</h4><p>-＊＊＊</p>
-                    <h3 class="total">合計<span>(税込み)</span></h3>
-                    <h3 class="total">￥＊＊＊</h3>
-                </div>
-            </section>
-            <input type="submit" value="次へ進む">
-        </form>
+                <section>
+                    <div class="section_title">
+                        <span class="material-symbols-outlined">
+                            payments
+                        </span>
+                        <h3>お支払い方法</h3>
+                    </div>
+                    <div class="choose_list">
+                        <label for="payment_radio1" class="choose accordion_menu">
+                            <div class="summary">
+                                <div class="left_box">
+                                    <input type="radio" name="payment_radio" id="payment_radio1" required>
+                                </div>
+                                <div class="right_box">
+                                    クレジットカード支払い
+                                </div>
+                            </div>
+                            <div class="details">
+                                <div class="item">
+                                    <input type="radio" name="credit_card" id="credit_card1">
+                                    <label for="credit_card1">
+                                        <div class="item_info">カード番号：************0000</div>
+                                    </label>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" name="credit_card" id="credit_card2">
+                                    <label for="credit_card2">
+                                        <div class="item_info">カード番号：************0000</div>
+                                    </label>
+                                </div>
+                                <button id="payment_add_button" class="add_button">
+                                    新しいカードを追加
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </button>
+                            </div>
+                        </label>
+                        <label for="payment_radio2" class="choose">
+                            <div class="left_box">
+                                <input type="radio" name="payment_radio" id="payment_radio2" required>
+                            </div>
+                            <div class="right_box">
+                                銀行振込
+                            </div>
+                        </label>
+                    </div>
+                    <div id="point_box">
+                        <input type="checkbox" name="use_point">
+                        <label for="point"></label><h4>ポイントを使う：</h4>
+                        <input type="number" name="point" id="point">
+                    </div>
+                </section>
+
+                <section>
+                    <div class="section_title">
+                        <span class="material-symbols-outlined">
+                            attach_money
+                        </span>
+                        <h3>ご請求金額</h3>
+                    </div>
+                    <div id="details_amount">
+                        <h4>商品合計</h4><p>＊＊＊</p>
+                        <h4>送料</h4><p>＊＊＊</p>
+                        <h4>ポイント</h4><p>-＊＊＊</p>
+                        <h3 class="total">合計<span>(税込み)</span></h3>
+                        <h3 class="total">￥＊＊＊</h3>
+                    </div>
+                </section>
+                <input type="submit" value="次へ進む">
+            </form>
+        </div>
         <!-- 住所入力フォーム　開始 -->
         <div id="address_modal_window" class="modal_window">
             <div id="address_modal_content" class="modal_content">
