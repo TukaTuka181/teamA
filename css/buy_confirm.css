@@ -361,6 +361,12 @@ input[type=radio]{
     grid-template-columns: 1fr 1fr;
     margin: 10px;
 }
+.details_amount_point{
+    display: none;
+}
+.details_amount_point.view{
+    display: block;
+}
 .total{
     width: 100%;
     text-align: center;
