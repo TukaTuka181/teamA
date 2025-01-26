@@ -1,0 +1,138 @@
+.image-container {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 共通アニメーション設定 */
+.image-container > div {
+  transition: all transform 2s ease-in-out, opacity 2s ease-in-out;
+  will-change: transform, opacity;
+}
+
+/* 各図形の初期位置とサイズ設定 */
+.pink-circle {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: -20%;
+  left: -5%;
+  z-index: 1;
+}
+
+.yellow-square {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: 80%;
+  left: 10%;
+  z-index: 2;
+}
+
+.purple-square {
+  position: absolute;
+  width: 350px;
+  height: 250px;
+  top: 25%;
+  left: 60%;
+  z-index: 3;
+}
+
+.pink-triangle {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  top: 70%;
+  left: 35%;
+  z-index: 4;
+}
+
+
+.blue-circle-border {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  top: 65%;
+  left: 12%;
+  z-index: 5;
+}
+
+.green-circle {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 50%;
+  left: 30%;
+  z-index: 6;
+}
+
+.orange-circle-border {
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  top: 75%;
+  left: 82%;
+  z-index: 7;
+}
+
+.green-square {
+  position: absolute;
+  width: 220px;
+  height: 180px;
+  top: 45%;
+  left: 55%;
+  z-index: 8;
+}
+
+.orange-circle {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 20%;
+  left: 10%;
+  z-index: 9;
+}
+
+.blue-circle {
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  top: 20%;
+  left: 45%;
+  z-index: 10;
+}
+
+.yellow-triangle {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: -15%;
+  left: 55%;
+  z-index: 11;
+}
+
+.purple-triangle {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  top: 50%;
+  left: -5%;
+  z-index: 12;
+}
+
+.blue-triangle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 65%;
+  left: 85%;
+  z-index: 13;
+}
+
+@media (max-width: 767px){
+  .bg_img{
+    width: 30% !important;
+    height: auto;
+  }
+}

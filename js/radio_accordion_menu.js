@@ -1,3 +1,7 @@
+// 確認画面のお支払い方法選択時、クレジットカード支払いを選んだら
+// 登録されているクレジットカードを表示する
+// 表示時は
+
 const payment_radios = document.getElementsByName("payment_radio");
 const credit_cart_radios = document.getElementsByName("credit_card");
 const details = document.querySelector(".details");

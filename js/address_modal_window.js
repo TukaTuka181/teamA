@@ -26,7 +26,7 @@ function show_address(){
     address_modal_window.classList.add("view");
     address_nonscroll.classList.add("nonscroll");
 };
-function hidden_address(){
+export function hidden_address(){
     address_modal_window.classList.remove("view");
     address_nonscroll.classList.remove("nonscroll");
 };

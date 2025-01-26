@@ -10,6 +10,21 @@
     <title>チームA</title>
 </head>
 <body>
+    <div class="image-container">
+        <img class="bg_img pink-circle" src="../img/pi.maru.png" alt="Pink Circle">
+        <img class="bg_img orange-circle" src="../img/or.maru.png" alt="Orange Circle">
+        <img class="bg_img blue-circle" src="../img/bl.maru.a.png" alt="Blue Circle Border">
+        <img class="bg_img yellow-triangle" src="../img/ye.sankaku.png" alt="Yellow Triangle">
+        <img class="bg_img green-square" src="../img/ge.sikaku.png" alt="Green Square">
+        <img class="bg_img purple-square" src="../img/pa.sikaku.png" alt="Purple Square">
+        <img class="bg_img purple-triangle" src="../img/pa.sansaku.png" alt="Purple Triangle">
+        <img class="bg_img green-circle" src="../img/gr.maru.png" alt="Green Circle">
+        <img class="bg_img blue-circle-border" src="../img/bl.maru.png" alt="Blue Circle">
+        <img class="bg_img yellow-square" src="../img/ye.sikaku.png" alt="Yellow Square">
+        <img class="bg_img pink-triangle" src="../img/pi.sankaku.png" alt="Pink Triangle">
+        <img class="bg_img blue-triangle" src="../img/bl.sankaku.png" alt="Blue Square">
+        <img class="bg_img orange-circle-border" src="../img/or.maru.a.png" alt="Orange Circle Border">
+    </div>
     <header>
         <div id="nav_parent">
             <div id="hamburger">
@@ -39,14 +54,16 @@
             <!-- モバイル用サイト内リンク -->
             <div id="mobile_menu">
                 <a href="./cart.html">カート</a>
-                <a href="./login">ログイン</a>
+                <a href="./login.html">ログイン</a>
                 <a href="./my_page.html">マイページ</a>
                 <a href="./contact.html">お問い合わせ</a>
             </div>
             <a href="./cart.html" id="mobile_icon" class="cart menu_icon"><img src="../img/UI.ks-to.png" alt="カート"></a>
             <div id="bg_cover"></div>
         </div>
+
     </header>
+
     <main>
         <div id="main_parent">
             <form action="./buy_confirm_step2.html" id="main_box">
@@ -125,7 +142,7 @@
                         </span>
                         <h3>住所</h3>
                     </div>
-                    <div class="choose_list">
+                    <div class="choose_list" id="address_choose_list">
                         <label for="address_radio1" class="choose">
                             <div class="left_box">
                                 <input type="radio" name="address_radio" id="address_radio1" required>
@@ -152,12 +169,12 @@
                         </label>
                     </div>
                     
-                    <button id="address_add_button" class="add_button">
+                    <div id="address_add_button" class="add_button">
                         新しい住所を追加
                         <span class="material-symbols-outlined">
                             add
                         </span>
-                    </button>
+                    </div>
                 </section>
 
                 <section>
@@ -177,25 +194,23 @@
                                     クレジットカード支払い
                                 </div>
                             </div>
-                            <div class="details">
-                                <div class="item">
-                                    <input type="radio" name="credit_card" id="credit_card1">
-                                    <label for="credit_card1">
+                            <div class="details" id="details">
+                                <div id="items">
+                                    <label class="item" for="credit_card1">
+                                        <input type="radio" name="credit_card" id="credit_card1">
+                                        <div class="item_info">カード番号：************0000</div>
+                                    </label>
+                                    <label class="item" for="credit_card2">
+                                        <input type="radio" name="credit_card" id="credit_card2">
                                         <div class="item_info">カード番号：************0000</div>
                                     </label>
                                 </div>
-                                <div class="item">
-                                    <input type="radio" name="credit_card" id="credit_card2">
-                                    <label for="credit_card2">
-                                        <div class="item_info">カード番号：************0000</div>
-                                    </label>
-                                </div>
-                                <button id="payment_add_button" class="add_button">
+                                <div id="payment_add_button" class="add_button">
                                     新しいカードを追加
                                     <span class="material-symbols-outlined">
                                         add
                                     </span>
-                                </button>
+                                </div>
                             </div>
                         </label>
                         <label for="payment_radio2" class="choose">
@@ -239,72 +254,78 @@
                     close
                 </span>
                 <h2>住所の追加</h2>
-                <form action="" id="address_form" class="add_form">
+                <div id="address_form" class="add_form">
                     <div class="input_box">
                         <h4>郵便番号<span class="must">*</span></h4>
                         <div id="address_completion_area">
-                            <input type="number" name="zip_code" id="zip_code" placeholder="ハイフンなし" maxlength="7" required>
-                            <button id="address_completion_btn">住所検索</button>
+                            <input type="number" name="zip_code" id="zip_code" placeholder="ハイフンなし" maxlength="7">
+                            <input type="button" id="address_completion_btn" value="住所検索"/>
                         </div>
                         <p id="error_msg"></p>
                     </div>
-
+    
                     <div class="input_box">
                         <h4>都道府県<span class="must">*</span></h4>
-                        <input type="text" name="pref" id="pref" required>
+                        <input type="text" name="pref" id="pref">
                     </div>
-
+    
                     <div class="input_box">
                         <h4>市区町村<span class="must">*</span></h4>
-                        <input type="text" name="municipalities" id="municipalities" required>
+                        <input type="text" name="municipalities" id="municipalities">
                     </div>
-
+    
                     <div class="input_box">
                         <h4>番地<span class="must">*</span></h4>
-                        <input type="text" name="street" required>
+                        <input type="text" name="street" id="street">
                     </div>
-
+    
                     <div class="input_box">
                         <h4>建物名</h4>
-                        <input type="text" name="building">
+                        <input type="text" name="building" id="building">
                     </div>
-
-                    <input type="submit" value="追加">
-                </form>
+    
+                    <input type="submit" id="add_address" value="追加">
+                </div>
             </div>
         </div>
         <!-- 住所入力フォーム　終了 -->
-
-         <!-- クレジットカード入力フォーム　開始　-->
-         <div id="payment_modal_window" class="modal_window">
+         
+        <!-- クレジットカード入力フォーム　開始　-->
+        <div id="payment_modal_window" class="modal_window">
             <div id="payment_modal_content" class="modal_content">
                 <span class="material-symbols-outlined close_icon" id="payment_close_icon">
                     close
                 </span>
                 <h2>クレジットカードの追加</h2>
-                <form action="" class="add_form">
+                <div id="credit_card" class="add_form">
                     <div class="input_box">
                         <h4>お名前<span class="must">*</span></h4>
-                        <input type="text" name="name" required>
+                        <input type="text" name="name" id="credit_card_name">
                     </div>
-
+    
                     <div class="input_box">
                         <h4>カード番号<span class="must">*</span></h4>
-                        <input type="number" name="number" required>
+                        <input type="number" name="number" id="credit_card_number">
                     </div>
-
+    
                     <div class="input_box">
                         <h4>有効期限<span class="must">*</span></h4>
-                        <input type="month" name="expire" id="expire" required>
+                        <div id="expire_area">
+                            <input type="number" name="expire_month" placeholder="MM" id="expire_month"
+                                oninput="javascript: this.value = this.value.slice(0, 2);">
+                            /
+                            <input type="number" name="expire_year" placeholder="YY" id="expire_year"
+                                oninput="javascript: this.value = this.value.slice(0, 2);">
+                        </div>
                     </div>
-
+    
                     <div class="input_box">
                         <h4>セキュリティコード<span class="must">*</span></h4>
-                        <input type="number" name="security_code" id="security_code" required>
+                        <input type="number" name="security_code" id="security_code">
                     </div>
-
-                    <input type="submit" value="追加">
-                </form>
+    
+                    <input type="submit" id="add_credit_card" value="追加">
+                </div>
             </div>
         </div>
         <!-- クレジットカード入力フォーム　終了 -->
@@ -324,9 +345,11 @@
             <p id="copy_right">&copy;pictsuba.com</p>
         </div>
     </footer>
+    <script src="../js/send_payment.js" type="module"></script>
+    <script src="../js/send_address.js" type="module"></script>
     <script src="../js/radio_accordion_menu.js"></script>
-    <script src="../js/payment_modal_window.js"></script>
-    <script src="../js/address_modal_window.js"></script>
+    <script src="../js/payment_modal_window.js" type="module"></script>
+    <script src="../js/address_modal_window.js" type="module"></script>
     <script src="../js/zipcode.js"></script>
     <script src="../js/comon.js"></script>
 </body>

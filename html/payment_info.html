@@ -10,6 +10,21 @@
     <title>チームA</title>
 </head>
 <body>
+    <div class="image-container">
+        <img class="bg_img pink-circle" src="../img/pi.maru.png" alt="Pink Circle">
+        <img class="bg_img orange-circle" src="../img/or.maru.png" alt="Orange Circle">
+        <img class="bg_img blue-circle" src="../img/bl.maru.a.png" alt="Blue Circle Border">
+        <img class="bg_img yellow-triangle" src="../img/ye.sankaku.png" alt="Yellow Triangle">
+        <img class="bg_img green-square" src="../img/ge.sikaku.png" alt="Green Square">
+        <img class="bg_img purple-square" src="../img/pa.sikaku.png" alt="Purple Square">
+        <img class="bg_img purple-triangle" src="../img/pa.sansaku.png" alt="Purple Triangle">
+        <img class="bg_img green-circle" src="../img/gr.maru.png" alt="Green Circle">
+        <img class="bg_img blue-circle-border" src="../img/bl.maru.png" alt="Blue Circle">
+        <img class="bg_img yellow-square" src="../img/ye.sikaku.png" alt="Yellow Square">
+        <img class="bg_img pink-triangle" src="../img/pi.sankaku.png" alt="Pink Triangle">
+        <img class="bg_img blue-triangle" src="../img/bl.sankaku.png" alt="Blue Square">
+        <img class="bg_img orange-circle-border" src="../img/or.maru.a.png" alt="Orange Circle Border">
+    </div>
     <header>
         <div id="nav_parent">
             <div id="hamburger">
@@ -39,13 +54,14 @@
             <!-- モバイル用サイト内リンク -->
             <div id="mobile_menu">
                 <a href="./cart.html">カート</a>
-                <a href="./login">ログイン</a>
+                <a href="./login.html">ログイン</a>
                 <a href="./my_page.html">マイページ</a>
                 <a href="./contact.html">お問い合わせ</a>
             </div>
             <a href="./cart.html" id="mobile_icon" class="cart menu_icon"><img src="../img/UI.ks-to.png" alt="カート"></a>
             <div id="bg_cover"></div>
         </div>
+
     </header>
     
     <main>
@@ -76,40 +92,41 @@
                         </span>
                     </button>
                 </div>
-                <!-- クレジットカード入力フォーム -->
-                <div id="payment_modal_window" class="modal_window">
-                    <div id="payment_modal_content" class="modal_content">
-                        <span class="material-symbols-outlined close_icon" id="payment_close_icon">
-                            close
-                        </span>
-                        <h2>クレジットカードの追加</h2>
-                        <form action="" class="add_form">
-                            <div class="input_box">
-                                <h4>お名前<span class="must">*</span></h4>
-                                <input type="text" name="name" required>
-                            </div>
-
-                            <div class="input_box">
-                                <h4>カード番号<span class="must">*</span></h4>
-                                <input type="number" name="number" required>
-                            </div>
-
-                            <div class="input_box">
-                                <h4>有効期限<span class="must">*</span></h4>
-                                <input type="month" name="expire" id="expire" required>
-                            </div>
-
-                            <div class="input_box">
-                                <h4>セキュリティコード<span class="must">*</span></h4>
-                                <input type="number" name="security_code" id="security_code" required>
-                            </div>
-
-                            <input type="submit" value="追加">
-                        </form>
-                    </div>
-                </div>
             </div>
         </div>
+        <!-- クレジットカード入力フォーム　開始 -->
+        <div id="payment_modal_window" class="modal_window">
+            <div id="payment_modal_content" class="modal_content">
+                <span class="material-symbols-outlined close_icon" id="payment_close_icon">
+                    close
+                </span>
+                <h2>クレジットカードの追加</h2>
+                <form action="" class="add_form">
+                    <div class="input_box">
+                        <h4>お名前<span class="must">*</span></h4>
+                        <input type="text" name="name" required>
+                    </div>
+
+                    <div class="input_box">
+                        <h4>カード番号<span class="must">*</span></h4>
+                        <input type="number" name="number" required>
+                    </div>
+
+                    <div class="input_box">
+                        <h4>有効期限<span class="must">*</span></h4>
+                        <input type="month" name="expire" id="expire" required>
+                    </div>
+
+                    <div class="input_box">
+                        <h4>セキュリティコード<span class="must">*</span></h4>
+                        <input type="number" name="security_code" id="security_code" required>
+                    </div>
+
+                    <input type="submit" value="追加">
+                </form>
+            </div>
+        </div>
+        <!-- クレジットカード入力フォーム　終了 -->
     </main>
     <footer>
         <div id="footer_parent">
@@ -126,7 +143,7 @@
             <p id="copy_right">&copy;pictsuba.com</p>
         </div>
     </footer>
-    <script src="../js/payment_modal_window.js"></script>
+    <script type="module" src="../js/payment_modal_window.js"></script>
     <script src="../js/comon.js"></script>
 </body>
 </html>
