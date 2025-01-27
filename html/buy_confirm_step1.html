@@ -132,6 +132,7 @@
                     </div>
                     <div id="product_sum">
                         <h4>合計金額：￥＊＊＊＊</h4>
+                        <input type="hidden" name="product_total" id="product_total" value="10000">
                     </div>
                 </section>
 
@@ -225,7 +226,7 @@
                     <div id="point_box">
                         <input type="checkbox" name="is_use_point" id="is_use_point">
                         <label for="point"><h4>ポイントを使う：</h4></label>
-                        <input type="number" name="point" id="point" value="0">
+                        <input type="number" name="point" id="point" value="0" min="0">
                     </div>
                 </section>
 
@@ -237,11 +238,11 @@
                         <h3>ご請求金額</h3>
                     </div>
                     <div id="details_amount">
-                        <h4>商品合計</h4><p>＊＊＊</p>
-                        <h4>送料</h4><p>＊＊＊</p>
+                        <h4>商品合計</h4><p id="show_product_total"></p>
+                        <h4>送料</h4><p id="show_postage"></p>
                         <h4 class="details_amount_point">ポイント</h4><p class="details_amount_point" id="use_point"></p>
                         <h3 class="total">合計<span>(税込み)</span></h3>
-                        <h3 class="total">￥＊＊＊</h3>
+                        <h3 class="total" id="total_amount">￥＊＊＊</h3>
                     </div>
                 </section>
                 <input type="submit" value="次へ進む">
@@ -349,7 +350,7 @@
     <script src="../js/send_address.js" type="module"></script>
     <script src="../js/payment_modal_window.js" type="module"></script>
     <script src="../js/address_modal_window.js" type="module"></script>
-    <script src="../js/use_point.js"></script>
+    <script src="../js/calc_amount.js"></script>
     <script src="../js/radio_accordion_menu.js"></script>
     <script src="../js/zipcode.js"></script>
     <script src="../js/comon.js"></script>
