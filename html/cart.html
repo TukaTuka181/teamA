@@ -72,9 +72,6 @@
                 <!-- カートが空じゃないとき  -->
                 <form action="./buy_confirm_step1.html">
                     <div class="cart_box">
-                        <div class="box_left">
-                            <input type="checkbox" name="is_bay" class="checkbox" checked>
-                        </div>
                         <div class="box_right">
                             <a class="product">
                                 <div class="frame">
@@ -93,17 +90,14 @@
                             <div class="product_bottom">
                                 <div class="quantity_area">
                                     <label for="quantity1">数量：</label>
-                                    <input type="number" name="quantity1" min="1" required>
+                                    <input type="number" name="quantity1" value="1" min="1" required>
                                 </div>
-                                <a href="" class="delete_button">削除</a>
+                                <div class="delete_button" id="1" onclick="delete_cart(1)">削除</div>
                             </div>
                         </div>
                     </div>
 
                     <div class="cart_box">
-                        <div class="box_left">
-                            <input type="checkbox" name="is_bay" class="checkbox" checked>
-                        </div>
                         <div class="box_right">
                             <a class="product">
                                 <div class="frame">
@@ -121,18 +115,15 @@
                             </a>
                             <div class="product_bottom">
                                 <div class="quantity_area">
-                                    <label for="quantity2">数量：</label>
-                                    <input type="number" name="quantity2" min="1" required>
+                                    <label for="quantity1">数量：</label>
+                                    <input type="number" name="quantity1" value="1" min="1" required>
                                 </div>
-                                <a href="" class="delete_button">削除</a>
+                                <div class="delete_button" id="2" onclick="delete_cart(2)">削除</div>
                             </div>
                         </div>
                     </div>
 
                     <div class="cart_box">
-                        <div class="box_left">
-                            <input type="checkbox" name="is_bay" class="checkbox" checked>
-                        </div>
                         <div class="box_right">
                             <a class="product">
                                 <div class="frame">
@@ -150,10 +141,10 @@
                             </a>
                             <div class="product_bottom">
                                 <div class="quantity_area">
-                                    <label for="quantity3">数量：</label>
-                                    <input type="number" name="quantity3" min="1" required>
+                                    <label for="quantity1">数量：</label>
+                                    <input type="number" name="quantity1" value="1" min="1" required>
                                 </div>
-                                <a href="" class="delete_button">削除</a>
+                                <div class="delete_button" id="3" onclick="delete_cart(3)">削除</div>
                             </div>
                         </div>
                     </div>
@@ -176,7 +167,7 @@
                     <img src="../img/pi.kuro.l 1.png" alt="フッターのロゴ">
                 </a>
                 <a href="./registration.html" class="footer_link">新規会員登録</a>
-                <a href="./contact.html" class="footer_link">お問い合わせ</a>
+                <a href="./faq.html" class="footer_link">お問い合わせ</a>
                 <a href="./about_us.html" class="footer_link">会社概要</a>
                 <a href="./rule.html" class="footer_link">利用規約</a>
                 <a href="./privacy_policy.html" class="footer_link">プライバシーポリシー</a>
@@ -184,6 +175,7 @@
             <p id="copy_right">&copy;pictsuba.com</p>
         </div>
     </footer>
+    <script src="../js/delete_cart.js"></script>
     <script src="../js/comon.js"></script>
 </body>
 </html>

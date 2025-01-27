@@ -85,6 +85,7 @@
     border: none;
     margin: 0 10px;
     text-decoration: underline;
+    cursor: pointer;
 }
 .product_bottom{
     display: flex;
