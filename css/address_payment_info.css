@@ -132,6 +132,10 @@
 #address_completion_area{
     display: flex;
 }
+#expire_area{
+    display: flex;
+    align-items: center;
+}
 #zip_code{
     width: 70%;
 }
@@ -142,6 +146,10 @@
     border: #000 2px solid;
     border-radius: 5px;
     color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.80rem;
 }
 
 .must{

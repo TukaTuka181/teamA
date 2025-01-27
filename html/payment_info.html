@@ -78,11 +78,11 @@
                     <div class="payment items">
                         <div class="item">
                             <div class="item_info">カード番号：************0000</div>
-                            <button class="delete_button">削除</button>
+                            <button class="delete_button" onclick="delete_payment('jspでクレカIDいれてね')">削除</button>
                         </div>
                         <div class="item">
                             <div class="item_info">カード番号：************0000</div>
-                            <button class="delete_button">削除</button>
+                            <button class="delete_button" onclick="delete_payment('jspでクレカIDいれてね')">削除</button>
                         </div>
                     </div>
                     <button id="payment_add_button" class="add_button">
@@ -114,7 +114,13 @@
 
                     <div class="input_box">
                         <h4>有効期限<span class="must">*</span></h4>
-                        <input type="month" name="expire" id="expire" required>
+                        <div id="expire_area">
+                            <input type="number" name="expire_month" placeholder="MM" id="expire_month"
+                                oninput="javascript: this.value = this.value.slice(0, 2);">
+                            /
+                            <input type="number" name="expire_year" placeholder="YY" id="expire_year"
+                                oninput="javascript: this.value = this.value.slice(0, 2);">
+                        </div>
                     </div>
 
                     <div class="input_box">
@@ -143,6 +149,7 @@
             <p id="copy_right">&copy;pictsuba.com</p>
         </div>
     </footer>
+    <script src="../js/delete_payment.js"></script>
     <script type="module" src="../js/payment_modal_window.js"></script>
     <script src="../js/comon.js"></script>
 </body>
