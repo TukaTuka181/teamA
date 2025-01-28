@@ -60,8 +60,7 @@ add_address.addEventListener("click", () => {
             <div class="item_info">
                 〒${req_zip_code.value.toString().substring(0, 3)}-${req_zip_code.value.toString().substring(3, 7)}<br>
                 ${req_pref.value} ${req_municipalities.value}<br>
-                ${req_street.value}<br>
-                ${req_building.value}
+                ${req_street.value}${req_building.value}
             </div>
             <button class="delete_button" id="${resp_id}" onclick="delete_address(${resp_id})">削除</button>
             `;

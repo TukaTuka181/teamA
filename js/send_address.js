@@ -69,7 +69,6 @@ add_address.addEventListener("click", () => {
             </div>
             `;
             address_choose_list.append(child);
-            
         }
     };
 
