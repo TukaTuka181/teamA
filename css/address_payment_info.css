@@ -21,12 +21,13 @@
 }
 .section{
     width: 50%;
-    margin: 25px
+    margin: 25px;
 }
 .section_title{
     display: flex;
     align-items: center;
     font-size: 1rem;
+    border-bottom: 2px solid #000;
 }
 .section_title h3{
     margin: 0 10px;
@@ -37,12 +38,10 @@
     border-bottom: 2px solid #000;
     padding: 20px 0;
 }
-.address .item:first-child{
-    border-top: 2px solid #000;
+.item_info{
+    width: 70%;
 }
-.payment .item:first-child{
-    border-top: 2px solid #000;
-}
+
 .delete_button {
     color: red;
     background: none;

@@ -61,7 +61,6 @@
             <a href="./cart.html" id="mobile_icon" class="cart menu_icon"><img src="../img/UI.ks-to.png" alt="カート"></a>
             <div id="bg_cover"></div>
         </div>
-
     </header>
     
     <main>
@@ -82,7 +81,7 @@
                                 群馬県 太田市 東貝沢町<br>
                                 〇〇〇〇−〇
                             </div>
-                            <button class="delete_button" onclick="delete_address('jspで住所IDいれてね')">削除</button>
+                            <button class="delete_button" id="1" onclick="delete_address(1)">削除</button>
                         </div>
                         <div class="item">
                             <div class="item_info">
@@ -90,7 +89,7 @@
                                 群馬県 太田市 長貝沢町<br>
                                 〇〇〇〇−〇
                             </div>
-                            <button class="delete_button" onclick="delete_address('jspで住所IDいれてね')">削除</button>
+                            <button class="delete_button" id="2" onclick="delete_address(2)">削除</button>
                         </div>
                     </div>
                     <button id="address_add_button" class="add_button">
@@ -109,11 +108,11 @@
                     close
                 </span>
                 <h2>住所の追加</h2>
-                <form action="" id="address_form" class="add_form">
+                <div id="address_form" class="add_form">
                     <div class="input_box">
                         <h4>郵便番号<span class="must">*</span></h4>
                         <div id="address_completion_area">
-                            <input type="number" name="zip_code" id="zip_code" placeholder="ハイフンなし" maxlength="7" required>
+                            <input type="number" name="zip_code" id="zip_code" placeholder="ハイフンなし" maxlength="7">
                             <div id="address_completion_btn">住所検索</div>
                         </div>
                         <p id="error_msg"></p>
@@ -121,26 +120,26 @@
     
                     <div class="input_box">
                         <h4>都道府県<span class="must">*</span></h4>
-                        <input type="text" name="pref" id="pref" required>
+                        <input type="text" name="pref" id="pref">
                     </div>
     
                     <div class="input_box">
                         <h4>市区町村<span class="must">*</span></h4>
-                        <input type="text" name="municipalities" id="municipalities" required>
+                        <input type="text" name="municipalities" id="municipalities">
                     </div>
     
                     <div class="input_box">
                         <h4>番地<span class="must">*</span></h4>
-                        <input type="text" name="street" required>
+                        <input type="text" name="street" id="street">
                     </div>
     
                     <div class="input_box">
                         <h4>建物名</h4>
-                        <input type="text" name="building">
+                        <input type="text" name="building" id="building">
                     </div>
     
                     <input type="submit" id="add_address" value="追加">
-                </form>
+                </div>
             </div>
         </div>
         <!-- 住所入力フォーム 終了 -->
@@ -160,7 +159,9 @@
             <p id="copy_right">&copy;pictsuba.com</p>
         </div>
     </footer>
+
     <script src="../js/delete_address.js"></script>
+    <script type="module" src="../js/add_address.js"></script>
     <script type="module" src="../js/address_modal_window.js"></script>
     <script src="../js/zipcode.js"></script>
     <script src="../js/comon.js"></script>
