@@ -39,7 +39,8 @@ add_credit_card.addEventListener("click", () => {
     //サーバーサイドに送るデータ
     let req_data = `owner_name=${req_name.value}&`;
     req_data += `number=${req_number.value}&`;
-    req_data += `expire=${req_expire_month.value}/${req_expire_year}&`;
+    req_data += `month=${req_expire_month.value}&`;
+	req_data += `year=${req_expire_year.value}&`;
     req_data += `security_cord=${req_security_code.value}`;
 
 	xhr.open('POST', '/pictsuba/api/card_id.json');

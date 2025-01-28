@@ -72,7 +72,7 @@
                             <img src="../img/pictura.png" alt="絵画">
                         </div>
                     </div>
-                    <button id="favorite_icon">
+                    <button id="favorite_icon" onclick="click_icon('JSPでproduct_idいれてね')">
                         <span class="material-symbols-outlined">
                             favorite
                         </span>
@@ -106,13 +106,7 @@
             <p id="copy_right">&copy;pictsuba.com</p>
         </div>
     </footer>
-    <script>
-        const favorite_icon = document.getElementById("favorite_icon");
-
-        favorite_icon.addEventListener("click", () => {            
-            favorite_icon.classList.toggle("click");
-        })
-    </script>
+    <script src="../js/send_favorite.js"></script>
     <script src="../js/comon.js"></script>
 </body>
 </html>
