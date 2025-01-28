@@ -99,8 +99,9 @@
 }
 /* スライドショーの高さ調整 */
 @media (max-width: 767px) {
-  #slide_show_window {
-    height: 50vh;
+  .swiper-pagination-bullet{
+    height: 10px;
+    width: 10px;
   }
   .arrow{
     font-weight: normal;

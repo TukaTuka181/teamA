@@ -4,6 +4,9 @@
   align-items: center;
   justify-content: center;
 }
+#main_parent a {
+  text-decoration: underline;
+}
 
 #contact{
   width: 50%;
@@ -95,10 +98,6 @@ button{
   cursor: pointer;
   color: #000;
 
-}
-
-a {
-  text-decoration: underline;
 }
 @media (max-width: 767px) {
   #contact{
