@@ -42,7 +42,7 @@ add_credit_card.addEventListener("click", () => {
     req_data += `expire=${req_expire_month.value}/${req_expire_year}&`;
     req_data += `security_cord=${req_security_code.value}`;
 
-	xhr.open('POST', '/pictsuba/api/address_id.json');
+	xhr.open('POST', '/pictsuba/api/card_id.json');
 	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
 	xhr.onload = function() {
