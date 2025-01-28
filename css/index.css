@@ -74,10 +74,10 @@
 }
 .frame{
   width: 136px;
-  height: 162px;
-  background-image: url("../img/gakubuti.png");
+  height: 136px;
+  background-image: url("../img/gakuburi_gold.png");
   background-repeat: no-repeat;
-  padding: 23px;
+  padding: 7px;
   background-size: contain;
   margin: 0;
 }
