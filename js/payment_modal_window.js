@@ -7,7 +7,6 @@ const payment_modal_content = document.getElementById("payment_modal_content");
 const payment_nonscroll = document.documentElement;
 
 payment_add_button.addEventListener("click", (event) => {
-    console.log("a")
     event.preventDefault()
     show_payment();
 });

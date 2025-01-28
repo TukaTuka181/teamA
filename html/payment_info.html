@@ -75,14 +75,14 @@
                         </span>
                         <h3>クレジットカード</h3>
                     </div>
-                    <div class="payment items">
+                    <div id="items" class="payment">
                         <div class="item">
                             <div class="item_info">カード番号：************0000</div>
-                            <button class="delete_button" onclick="delete_payment('jspでクレカIDいれてね')">削除</button>
+                            <button class="delete_button" id="1" onclick="delete_payment(1)">削除</button>
                         </div>
                         <div class="item">
                             <div class="item_info">カード番号：************0000</div>
-                            <button class="delete_button" onclick="delete_payment('jspでクレカIDいれてね')">削除</button>
+                            <button class="delete_button" id="2" onclick="delete_payment(2)">削除</button>
                         </div>
                     </div>
                     <button id="payment_add_button" class="add_button">
@@ -101,15 +101,15 @@
                     close
                 </span>
                 <h2>クレジットカードの追加</h2>
-                <form action="" class="add_form">
+                <div class="add_form">
                     <div class="input_box">
                         <h4>お名前<span class="must">*</span></h4>
-                        <input type="text" name="name" required>
+                        <input type="text" name="name" id="credit_card_name">
                     </div>
 
                     <div class="input_box">
                         <h4>カード番号<span class="must">*</span></h4>
-                        <input type="number" name="number" required>
+                        <input type="number" name="number" id="credit_card_number">
                     </div>
 
                     <div class="input_box">
@@ -125,11 +125,11 @@
 
                     <div class="input_box">
                         <h4>セキュリティコード<span class="must">*</span></h4>
-                        <input type="number" name="security_code" id="security_code" required>
+                        <input type="number" name="security_code" id="security_code">
                     </div>
 
-                    <input type="submit" value="追加">
-                </form>
+                    <input type="submit" id="add_credit_card" value="追加">
+                </div>
             </div>
         </div>
         <!-- クレジットカード入力フォーム　終了 -->
@@ -150,6 +150,7 @@
         </div>
     </footer>
     <script src="../js/delete_payment.js"></script>
+    <script type="module" src="../js/add_payment.js"></script>
     <script type="module" src="../js/payment_modal_window.js"></script>
     <script src="../js/comon.js"></script>
 </body>
