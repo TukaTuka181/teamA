@@ -112,23 +112,44 @@
     background-color: #f4f4f4;
     border-radius: 5px;
     position: absolute;
+    z-index: 101;
     top: 0;
     left: 50%;
-    transform: translateX(-50%) translateY(100%);
+    transform: translateX(-50%);
     width: fit-content;
+    max-width: 80%;
     align-items: center;
-    display: none;
+    display: flex;
     padding: 5px 20px;
     margin: 10px 0;
+    opacity: 0;
+    overflow: hidden;
   }
   #alert_window.view{
-    display: flex;
+    opacity: 1;
   }
   #alert_window span{
     font-size: 2rem;
     color: #36ff4a;
     padding-right: 10px;
   }
+  #alert_window p{
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+  #alert_border {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    transform: translateX(0%);
+    transition: transform 2s linear;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#alert_border.view {
+    transform: translateX(100%);
+}
 
 @media (max-width: 426px){
     .products{
