@@ -108,6 +108,28 @@
     display: block;
 }
 
+#alert_window{
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    width: fit-content;
+    align-items: center;
+    display: none;
+    padding: 5px 20px;
+    margin: 10px 0;
+  }
+  #alert_window.view{
+    display: flex;
+  }
+  #alert_window span{
+    font-size: 2rem;
+    color: #36ff4a;
+    padding-right: 10px;
+  }
+
 @media (max-width: 426px){
     .products{
         flex-direction: column;

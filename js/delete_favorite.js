@@ -1,10 +1,6 @@
 //お気に入り商品の削除
 function delete_favorite(product_id){
 
-	if(!confirm("本当に削除しますか？")){
-		return
-	};
-
 	let delete_button = document.getElementById(product_id);
 	let parent = delete_button.closest(".product");
 	parent.remove();
