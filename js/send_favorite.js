@@ -24,6 +24,7 @@ function click_icon(product_id){
 	} else {
 		
 		//お気に入り商品の削除
+		alert("お気に入りから削除しました");
 		
 		let xhr = new XMLHttpRequest();
 			
