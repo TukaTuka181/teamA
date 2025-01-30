@@ -1,11 +1,6 @@
 //カート内商品の削除
 
 function delete_cart(cart_id){
-
-    //キャンセル
-    if(!confirm("本当に削除しますか？")){
-        return
-    }
     
 	let delete_button = document.getElementById(cart_id);
 	let parent = delete_button.closest(".cart_box");

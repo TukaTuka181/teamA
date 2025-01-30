@@ -111,20 +111,18 @@
 #alert_window{
     background-color: #f4f4f4;
     border-radius: 5px;
-    position: absolute;
+    position: sticky;
     z-index: 101;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 15dvh;
     width: fit-content;
     max-width: 80%;
     align-items: center;
     display: flex;
     padding: 5px 20px;
-    margin: 10px 0;
+    margin: 10px auto;
     opacity: 0;
     overflow: hidden;
-  }
+}
   #alert_window.view{
     opacity: 1;
   }
