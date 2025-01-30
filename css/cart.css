@@ -34,6 +34,12 @@
     display: flex;
     justify-content: center;
 }
+#products{
+    display: none;
+}
+#products.view{
+    display: block;
+}
 .product{
     display: flex;
     align-items: center;
@@ -114,6 +120,12 @@ input[type=submit]{
 
 #bag_icon{
     font-size: 96px;
+}
+#is_null{
+    display: none;
+}
+#is_null.view{
+    display: block;
 }
 
 @media (max-width: 767px){
