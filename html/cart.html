@@ -70,7 +70,7 @@
             <div id="main_window">
 
                 <!-- カートが空じゃないとき  -->
-                <form action="./buy_confirm_step1.html">
+                <form action="./buy_confirm_step1.html" id="products">
                     <div class="cart_box">
                         <div class="box_right">
                             <a class="product">
@@ -153,10 +153,12 @@
                 </form>
 
                 <!-- カートが空のとき -->
-                <!-- <span class="material-symbols-outlined" id="bag_icon">
-                    shopping_bag
-                </span>
-                <h3>カートの中身は空です</h3> -->
+                <div id="is_null">
+                    <span class="material-symbols-outlined" id="bag_icon">
+                        shopping_bag
+                    </span>
+                    <h3>カートの中身は空です</h3>
+                </div>
             </div>
         </div>
     </main>
@@ -175,6 +177,8 @@
             <p id="copy_right">&copy;pictsuba.com</p>
         </div>
     </footer>
+    <script src="../js/show_alert.js"></script>
+    <script src="../js/check_null.js"></script>
     <script src="../js/delete_cart.js"></script>
     <script src="../js/comon.js"></script>
 </body>
