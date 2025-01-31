@@ -1,7 +1,7 @@
 //商品をカートに追加する
 function add_cart(product_id){
 	
-	alert("カートに追加しました");
+	show_alert("カートに追加しました");
 
 	let xhr = new XMLHttpRequest();
 			

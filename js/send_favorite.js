@@ -10,7 +10,7 @@ function click_icon(product_id){
 	if(favorite_icon.getAttribute("class") !== "click"){
 		
 		//お気に入り商品の追加
-		alert("お気に入りに追加しました");
+		show_alert("お気に入りに追加しました");
 
 		let xhr = new XMLHttpRequest();
 		
@@ -24,7 +24,7 @@ function click_icon(product_id){
 	} else {
 		
 		//お気に入り商品の削除
-		alert("お気に入りから削除しました");
+		show_alert("お気に入りから削除しました");
 		
 		let xhr = new XMLHttpRequest();
 			
