@@ -23,7 +23,5 @@ function delete_cart(cart_id){
    let products = document.getElementById("products");
    let is_null = document.getElementById("is_null");
 
-   if(products.childElementCount <= 0){
-   	is_product_null(products, is_null);
-   }
+   	is_product_null(products, is_null, 1);
 }
