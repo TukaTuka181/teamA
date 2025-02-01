@@ -110,12 +110,12 @@ section{
 }
 .frame{
     width: 136px;
-    height: 162px;
+    height: 136px;
     min-width: 136px;
-    min-height: 162px;
+    min-height: 136px;
     background-image: url("../img/gakubuti.png");
     background-repeat: no-repeat;
-    padding: 23px;
+    padding: 7px;
     background-size: contain;
     margin: 0;
 }
