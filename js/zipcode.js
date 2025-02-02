@@ -21,7 +21,7 @@ address_completion_btn.addEventListener("click", () => {
         // レスポンス取得成功
         let respData = JSON.parse(xhr.responseText);
         
-        if(respData.status === 400){
+        if(respData.status === 400 || respData.results == null){
             error_msg.innerText = "郵便番号から住所が検索できませんでした。";
             return;
         }
