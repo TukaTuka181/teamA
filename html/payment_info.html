@@ -101,35 +101,39 @@
                     close
                 </span>
                 <h2>クレジットカードの追加</h2>
-                <div class="add_form">
+                <form id="payment_form" class="add_form" onsubmit="return false;">
                     <div class="input_box">
-                        <h4>お名前<span class="must">*</span></h4>
-                        <input type="text" name="name" id="credit_card_name">
+                        <h4>カード名義人<span class="must">*</span></h4>
+                        <input type="text" name="name" id="credit_card_name" required>
                     </div>
-
+    
                     <div class="input_box">
                         <h4>カード番号<span class="must">*</span></h4>
-                        <input type="number" name="number" id="credit_card_number">
+                        <input type="text" name="number" id="credit_card_number" pattern="[0-9]{14,16}" required>
+                        <p id="number_error" class="error_msg"></p>
                     </div>
-
+    
                     <div class="input_box">
                         <h4>有効期限<span class="must">*</span></h4>
                         <div id="expire_area">
-                            <input type="number" name="expire_month" placeholder="MM" id="expire_month"
-                                oninput="javascript: this.value = this.value.slice(0, 2);">
+                            <input type="text" name="expire_month" placeholder="MM" id="expire_month"
+                                pattern="0[1-9]|1[0-2]" required>
                             /
-                            <input type="number" name="expire_year" placeholder="YY" id="expire_year"
-                                oninput="javascript: this.value = this.value.slice(0, 2);">
+                            <input type="text" name="expire_year" placeholder="YY" id="expire_year"
+                                pattern="[0-9]{2}" required>
                         </div>
+                        <p id="expire_month_error" class="error_msg"></p>
+                        <p id="expire_year_error" class="error_msg"></p>
                     </div>
-
+    
                     <div class="input_box">
                         <h4>セキュリティコード<span class="must">*</span></h4>
-                        <input type="number" name="security_code" id="security_code">
+                        <input type="text" name="security_code" id="security_code" pattern="[0-9]{3,4}" required>
+                        <p id="code_error" class="error_msg"></p>
                     </div>
-
+    
                     <input type="submit" id="add_credit_card" value="追加">
-                </div>
+                </form>
             </div>
         </div>
         <!-- クレジットカード入力フォーム　終了 -->
@@ -149,6 +153,7 @@
             <p id="copy_right">&copy;pictsuba.com</p>
         </div>
     </footer>
+    <script src="../js/payment_validation.js"></script>
     <script src="../js/delete_payment.js"></script>
     <script type="module" src="../js/add_payment.js"></script>
     <script type="module" src="../js/payment_modal_window.js"></script>
