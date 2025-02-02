@@ -255,29 +255,27 @@
                     close
                 </span>
                 <h2>住所の追加</h2>
-                <div id="address_form" class="add_form">
+                <form id="address_form" class="add_form" onsubmit="return false;">
                     <div class="input_box">
                         <h4>郵便番号<span class="must">*</span></h4>
-                        <div id="address_completion_area">
-                            <input type="number" name="zip_code" id="zip_code" placeholder="ハイフンなし" maxlength="7">
-                            <input type="button" id="address_completion_btn" value="住所検索"/>
-                        </div>
-                        <p id="error_msg"></p>
+                        <input type="text" name="zip_code" id="zip_code" placeholder="ハイフンなし" pattern="[0-9]{7}" inputmode="numeric" required>
+                        <p id="zip_code_error" class="error_msg"></p>
                     </div>
     
                     <div class="input_box">
-                        <h4>都道府県<span class="must">*</span></h4>
-                        <input type="text" name="pref" id="pref">
+                        <h4>都道府県<span class="must">(自動入力)</span></h4>
+                        <input type="text" name="pref" id="pref" readonly>
+                        <p id="pref_error" class="error_msg"></p>
                     </div>
     
                     <div class="input_box">
-                        <h4>市区町村<span class="must">*</span></h4>
-                        <input type="text" name="municipalities" id="municipalities">
+                        <h4>市区町村<span class="must">(自動入力)</span></h4>
+                        <input type="text" name="municipalities" id="municipalities" readonly>
                     </div>
     
                     <div class="input_box">
                         <h4>番地<span class="must">*</span></h4>
-                        <input type="text" name="street" id="street">
+                        <input type="text" name="street" id="street" required>
                     </div>
     
                     <div class="input_box">
@@ -286,7 +284,7 @@
                     </div>
     
                     <input type="submit" id="add_address" value="追加">
-                </div>
+                </form>
             </div>
         </div>
         <!-- 住所入力フォーム　終了 -->
@@ -354,5 +352,6 @@
     <script src="../js/radio_accordion_menu.js"></script>
     <script src="../js/zipcode.js"></script>
     <script src="../js/comon.js"></script>
+    <script src="../js/address_validation.js"></script>
 </body>
 </html>

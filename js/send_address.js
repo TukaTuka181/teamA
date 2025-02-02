@@ -4,31 +4,16 @@ const req_pref = document.getElementById("pref");
 const req_municipalities = document.getElementById("municipalities");
 const req_street = document.getElementById("street");
 const req_building = document.getElementById("building");
-const add_address = document.getElementById("add_address");
+const address_form = document.getElementById("address_form");
 
-add_address.addEventListener("click", () => {
+window.address_form_flag = 0;
 
-    let error_text = "";
+address_form.addEventListener("submit", () => {
 
-    //未入力チェック
-    if(req_zip_code.value === ""){
-        error_text = "郵便番号が未入力です。\n";
-    }
-    if(req_pref.value === ""){
-        error_text += "都道府県が未入力です。\n";
-    }
-    if(req_municipalities.value === ""){
-        error_text += "市区町村が未入力です。\n";
-    }
-    if(req_street.value === ""){
-        error_text += "番地が未入力です";
-    }
-    
-    if(error_text !== ""){
-        alert(error_text);
+    if(address_form_flag === 1){
         return;
     }
-
+    
     let xhr = new XMLHttpRequest();
 
     //サーバーサイドに送るデータ

@@ -1,70 +1,32 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&" />
-    <link href="../img/sightIcon.jpg" rel="icon">
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link href="../css/favorite.css" rel="stylesheet">
-    <style>
-        #alert_border {
-            height: 3px;
-            width: 100%;
-            background-color: black;
-            transform: translateX(0%);
-            transition: transform 2s linear;
-            position: absolute;
-            bottom: 0;
-            left: 0;
+<style>
+    input {
+        display: block;
+        width: 30vw;
+        min-width: 240px;
+        border: 1px solid #ccc;
+        padding: 8px;
+        font-size: 14px;
+
+        &:not(:placeholder-shown):invalid {
+            color: red;
         }
-        #alert_border.view {
-            transform: translateX(100%);
-        }
-    </style>
-    <title>チームA</title>
-</head>
-<body>
-    <div id="alert_window">
-        <span class="material-symbols-outlined">
-            check_circle
-        </span>
-        <p id="alert_text">カートに追加しました</p>
-        <div id="alert_border"></div>
-    </div>
-    
-    <h1>test</h1>
-    <button id="a" onclick="show_alert('カートに追加')">click</button>
+    }
+    input:user-invalid ~ span::before{
+        content: "error";
+    }
+</style>
 
-    <script>
-        let do_flag = 0;
-        // アラートの表示
-        function show_alert(show_text) {
-            if(do_flag === 1){
-                return
-            } else {
-                do_flag = 1;
-            }
-
-            let alert_window = document.getElementById("alert_window");
-            let alert_text = document.getElementById("alert_text");
-            let alert_border = document.getElementById("alert_border");
-
-            alert_window.classList.add("view");
-            alert_text.innerText = show_text;
-            alert_border.classList.add("view");
-
-            setTimeout(() => {
-                alert_window.classList.remove("view");
-                alert_border.classList.remove("view");
-                do_flag = 0;
-            }, 2000);
-        }
-
-        window.show_alert = show_alert;
-    </script>
-</body>
-</html>
+<form id="myform" onsubmit="return false;">
+    <input type="text" id="myInput" pattern="[0-9]{14,16}"  inputmode="numeric" value="aa" readonly/>
+    <span id="error_msg"></span>
+    <button>Submit</button>
+</form>
+<script>
+    let myform = document.getElementById("myform");
+    let myInput = document.getElementById("myInput");
+    myform.addEventListener("submit", () =>{
+        
+        console.log(myInput.value);
+        
+    })
+</script>
