@@ -168,6 +168,7 @@ section{
     border: none;
     color: #000;
     cursor: pointer;
+    border-radius: 5px;
 }
 .modal_window{
     display: none;
@@ -234,11 +235,13 @@ section{
 .error_msg {
     font-size: 0.8rem;
     color: #ff0000;
-    padding: 5px;
 }
 #required_msg{
     color: #ff0000;
     padding: 5px;
+}
+#non_card_error{
+    text-align: center;
 }
 .input_box{
     width: 100%;
