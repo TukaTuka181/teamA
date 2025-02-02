@@ -54,6 +54,13 @@ address_form.addEventListener("submit", () => {
             </div>
             `;
             address_choose_list.append(child);
+
+            //追加ボタンを押した後、inputタグを初期化
+			req_zip_code.value = null;
+			req_pref.value = null;
+			req_municipalities.value = null;
+			req_street.value = null;
+			req_building.value = null;
         }
     };
 
