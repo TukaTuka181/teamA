@@ -34,13 +34,11 @@ form > * {
     font-size: 1rem;
 }
 form > input{
-    background-color: #c8c8c8;
+    background-color: #dddddd;
     border: none;
+    border-radius: 0.5dvh;
     margin-bottom: 20px;
     padding: 10px;
-}
-input[type=password]{
-    margin-bottom: 0;
 }
 form > a{
     color: #ff0000;
