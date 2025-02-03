@@ -33,19 +33,32 @@
 form > * {
     font-size: 1rem;
 }
-form > input{
-    background-color: #c8c8c8;
+input{
+    width: 100%;
+    background-color: #dddddd;
     border: none;
-    margin-bottom: 20px;
+    border-radius: 0.5dvh;
+    margin-bottom: 0px;
     padding: 10px;
 }
-input[type=password]{
-    margin-bottom: 0;
+input[type=email]{
+    margin-bottom: 20px;
 }
 form > a{
     color: #ff0000;
     border-top: 0;
     font-size: 0.75rem;
+}
+.password_area{
+    position: relative;
+}
+.eye_icon{
+    width: auto;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    cursor: pointer;
 }
 input[type=submit]{
     background-color: #ff0000;
@@ -54,6 +67,7 @@ input[type=submit]{
     margin: 20px 0;
     padding: 10px;
     border-radius: 5px;
+    margin-bottom: 0;
 }
 @media (max-width: 767px){
     #main_window{
