@@ -1,7 +1,7 @@
 let zip = document.getElementById("zip_code");
 
 zip.addEventListener("input", () => {
-	let error_msga = document.getElementById("zip_code_error");
+	let error_msg = document.getElementById("zip_code_error");
 	let pattern = new RegExp(`^${zip.pattern}$`);
 	
 	if (!pattern.test(zip.value)) {  

@@ -16,7 +16,7 @@
     }
 </style>
 
-<form id="myform" onsubmit="return false;">
+<form id="myform"">
     <input type="text" id="myInput" pattern="[0-9]{14,16}"  inputmode="numeric" value="aa" readonly/>
     <span id="error_msg"></span>
     <button>Submit</button>
@@ -24,9 +24,14 @@
 <script>
     let myform = document.getElementById("myform");
     let myInput = document.getElementById("myInput");
+
+    window.onload = () =>{
+        console.log("load");
+    }
+
     myform.addEventListener("submit", () =>{
         
-        console.log(myInput.value);
+        console.log("submit");
         
     })
 </script>
