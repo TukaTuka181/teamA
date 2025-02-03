@@ -29,7 +29,7 @@ password.addEventListener("input", () => {
 	}
 	
 	if (!pattern.test(password.value)) {
-		error_msg.innerText = "半角英数字、6桁以上で入力してください";
+		error_msg.innerText = "半角英数字、特殊文字の8桁以上16桁以下で入力してください";
 	} else {
 		error_msg.innerText = "";
 	}
@@ -63,7 +63,7 @@ check_password.addEventListener("input", () => {
 	}
 
 	if (!pattern.test(check_password.value)) {
-		check_password_error.innerText = "半角英数字、6桁以上で入力してください";
+		check_password_error.innerText = "半角英数字、特殊文字の8桁以上16桁以下で入力してください";
 	} else {
 		check_password_error.innerText = "";
 	}
