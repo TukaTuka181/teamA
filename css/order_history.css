@@ -1,11 +1,11 @@
-#main_parent{
+#main_parent {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#main_window{
+#main_window {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
@@ -13,88 +13,100 @@
     margin: 30px 0;
     box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 10px;
 }
+
 #products {
     width: 100%;
     display: none;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-#products.view{
+
+#products.view {
     display: flex;
 }
-.product{
+
+.product {
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 30px 0;
     border-top: 2px solid #4e4e4e;
 }
-.product:first-child{
+
+.product:first-child {
     border: none;
 }
-.info{
+
+.info {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .state {
     text-align: center;
     border-bottom: 2px dashed #4e4e4e;
     font-weight: bold;
 }
-.info_bottom{
+
+.info_bottom {
     text-align: left;
 }
-.info_bottom > * {
+
+.info_bottom>* {
     display: inline;
     padding: 0 10px;
     margin: 0;
 }
-.price {
-    border-bottom: 1px solid #000;
-    width: fit-content;
+.frame {
+    width: 136px;
+    height: 136px;
+    min-width: 136px;
+    background-image: url("../img/gakubuti.png");
+    background-repeat: no-repeat;
+    padding: 7px;
+    background-size: contain;
+    margin: 0;
 }
 
-.frame{
-  width: 136px;
-  height: 136px;
-  background-image: url("../img/gakubuti.png");
-  background-repeat: no-repeat;
-  padding: 7px;
-  background-size: contain;
-  margin: 0;
-}
-  .draw_area{
+.draw_area {
     width: 100%;
     height: 100%;
     background-color: #fff;
-  }
-  .frame img{
+}
+
+.frame img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-#book_icon{
+
+#book_icon {
     font-size: 96px;
 }
-#is_null{
+
+#is_null {
     display: none;
 }
-#is_null.view{
+
+#is_null.view {
     display: block;
 }
 
-@media (max-width: 426px){
-    .state{
+@media (max-width: 426px) {
+    .state {
         font-size: 16px;
-
     }
-    .info_bottom{
+    .info {
+        margin-left: 10px;
+    }
+    .info_bottom {
         display: flex;
         flex-direction: column;
     }
-    .info_bottom > * {
+
+    .info_bottom>* {
         padding: 0;
         display: inline;
     }
