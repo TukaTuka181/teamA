@@ -62,11 +62,6 @@ input,select,option{
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
-
-input,select{
-    padding: 10px;
-}
-
 input[type=submit]{
     background-color: #ff0000;
     color: #fff;

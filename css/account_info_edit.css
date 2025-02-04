@@ -34,13 +34,48 @@ label > h4{
     margin-bottom: 0;
 }
 .info_box{
-    margin-bottom: 20px;
+    margin: 20px 0;
     padding: 5px 10px;
     background-color: #e4e4e4;
     font-size: 16px;
     color: #3c3c3c;
     border: none;
     border-radius: 5px;
+}
+.must{
+    color: red;
+    font-size: 0.8rem;
+}
+input[type=date]{
+    appearance: none;
+}
+input,select,option{
+    font-size: 1rem;
+    width: 100%;
+    background-color: #dddddd;
+    border-radius: 0.5dvh;
+    border: none;
+    padding: 10px;
+
+    &:not(:placeholder-shown):invalid{
+        color: red;
+    }
+}
+.error_msg {
+    font-size: 0.8rem;
+    color: #ff0000;
+    margin: 0;
+}
+.password_area{
+    position: relative;
+}
+.eye_icon{
+    width: auto;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    cursor: pointer;
 }
 #submit_btn{
     width: 50%;
