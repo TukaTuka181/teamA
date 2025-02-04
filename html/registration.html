@@ -72,13 +72,13 @@
 					
 					<div class="input_box">
 						<label for="phone"><h4>電話番号</h4></label>
-						<input type="tel" pattern="[0-9]{10,11}" id="phone" name="phone" autocomplete="off">
+						<input type="tel" pattern="[0-9]{10,11}" id="phone" name="phone" placeholder="ハイフンなし" autocomplete="off">
 						<p id="tel_error" class="error_msg"></p>
 					</div>
 					
 					<div class="input_box">
 						<label for="barth_day"><h4>誕生日</h4></label>
-						<input type="date" name="birth_day" class="info_box" id="birth_day" autocomplete="off">
+						<input type="date" name="birth_day" class="info_box" id="birth_day" min="1900-01-01" max="9999-12-31" autocomplete="off">
 						<input type="hidden" name="age" id="age">
 					</div>
 					
