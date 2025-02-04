@@ -69,30 +69,64 @@
                 
             <div id="info_window">
                 <form id="info_form" action="./account_info.html">
-                    <label for="name"><h4>お名前</h4></label>
-                    <input type="text" name="name" class="info_box">
+                    <div class="input_box">
+						<label for="name"><h4>名前</h4></label>
+						<input type="text" name="name" autocomplete="off">
+					</div>
 
-                    <label for="password"><h4>パスワード</h4></label>
-                    <input type="password" name="password" class="info_box">
+                    <div class="input_box">
+						<label for="password"><h4>パスワード</h4></label>
+						<div class="password_area">
+							<input type="password" name="password" pattern="[a-zA-Z0-9!@#$%]{8,16}" id="password" autocomplete="off">
+							<span class="material-symbols-outlined eye_icon" id="eye_icon">
+								visibility_off
+							</span>
+						</div>
+						<p id="password_error" class="error_msg"></p>
+					</div>
 
-                    <label for="phone"><h4>電話番号</h4></label>
-                    <input type="tel" name="phone" class="info_box">
+                    <div class="input_box">
+						<label for="check_password"><h4>パスワード（確認用）</h4></label>
+						<div class="password_area">
+							<input type="password" name="check_password" pattern="[a-zA-Z0-9!@#$%]{8,16}" id="check_password" autocomplete="off">
+							<span class="material-symbols-outlined eye_icon" id="check_eye_icon">
+								visibility_off
+							</span>
+						</div>
+						<p id="match_error" class="error_msg"></p>
+						<p id="check_password_error" class="error_msg"></p>
+					</div>
 
-                    <label for="mail"><h4>メールアドレス</h4></label>
-                    <input type="email" name="mail" class="info_box">
+                    <div class="input_box">
+						<label for="mail"><h4>メールアドレス</h4></label>
+						<input type="email" name="mail" autocomplete="off">
+					</div>
 
-                    <label for="age"><h4>年齢</h4></label>
-                    <input type="number" name="age" min="0" class="info_box">
+                    <div class="input_box">
+						<label for="phone"><h4>電話番号</h4></label>
+						<input type="tel" pattern="[0-9]{10,11}" id="phone" name="phone" autocomplete="off">
+						<p id="tel_error" class="error_msg"></p>
+					</div>
 
-                    <label for="barth_day"><h4>誕生日</h4></label>
-                    <input type="date" class="info_box">
+                    <div class="input_box">
+						<label for="mail"><h4>年齢<span class="must">(自動入力)</span></h4></label>
+						<input type="number" name="age" id="age" autocomplete="off" readonly>
+					</div>
 
-                    <label for="gender"><h4>性別</h4></label>
-                    <select name="gender" class="info_box">
-                        <option value="">男</option>
-                        <option value="dog">女</option>
-                        <option value="cat">回答しない</option>
-                    </select>
+                    <div class="input_box">
+						<label for="barth_day"><h4>誕生日</h4></label>
+						<input type="date" name="birth_day" id="birth_day" autocomplete="off">
+					</div>
+
+                    <div class="input_box">
+						<label for="gender"><h4>性別</h4></label>
+						<select name="gender" autocomplete="off">
+							<option selected="selected" disabled="disabled">-</option>
+							<option value="male">男</option>
+							<option value="female">女</option>
+							<option value="nothing">回答しない</option>
+						</select>
+					</div>
                     <input type="submit" id="submit_btn">
                 </form>
             </div>
@@ -114,6 +148,7 @@
             <p id="copy_right">&copy;pictsuba.com</p>
         </div>
     </footer>
+    <script src="../js/registation_validation.js"></script>
     <script src="../js/comon.js"></script>
 </body>
 </html>
