@@ -29,6 +29,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 30px 0;
     border-top: 2px solid #4e4e4e;
 }
@@ -38,6 +39,7 @@
 }
 
 .info {
+    width: 200px;
     margin-left: 20px;
     display: flex;
     flex-direction: column;
@@ -45,13 +47,10 @@
 }
 
 .state {
+    overflow-wrap: break-word;
     text-align: center;
     border-bottom: 2px dashed #4e4e4e;
     font-weight: bold;
-}
-
-.info_bottom {
-    text-align: left;
 }
 
 .info_bottom>* {
@@ -96,6 +95,9 @@
 }
 
 @media (max-width: 426px) {
+    .product{
+        flex-direction: column;
+    }
     .state {
         font-size: 16px;
     }

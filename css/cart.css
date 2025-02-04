@@ -32,7 +32,8 @@
 }
 .box_right{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 60%;
 }
 #products{
     display: none;
@@ -78,13 +79,14 @@
 .info_left{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .info_left > * {
+    width: 200px;
     text-align: left;
     display: inline;
     padding: 0 10px;
     margin: 0;
+    overflow-wrap: break-word;
 }
 .delete_button {
     color: red;
@@ -144,6 +146,7 @@ input[type=submit]{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 20px;
     }
     .info_left > * {
         padding: 0;
@@ -152,6 +155,6 @@ input[type=submit]{
     }
     .product_bottom{
         margin: 10px;
-        flex-direction: row;
+        flex-direction: column;
     }
 }
