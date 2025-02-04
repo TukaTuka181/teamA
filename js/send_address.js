@@ -8,10 +8,10 @@ const address_form = document.getElementById("address_form");
 
 window.address_form_flag = 0;
 
-address_form.addEventListener("submit", (event) => {
-
+address_form.addEventListener("submit", () => {
+    
     if(address_form_flag === 1){
-        event.preventDefault();
+        return;
     }
     
     let xhr = new XMLHttpRequest();

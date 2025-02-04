@@ -245,6 +245,9 @@ section{
     color: #ff0000;
     padding: 5px;
 }
+#non_address_error{
+    text-align: center;
+}
 #non_card_error{
     text-align: center;
 }
