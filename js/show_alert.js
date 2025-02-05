@@ -1,12 +1,18 @@
 let do_flag = 0;
+let alert_window_style = document.getElementById("alert_window").style;
+let headerHeighta = document.querySelector("header").offsetHeight;
 
 // アラートの表示
 function show_alert(show_text) {
+
 	if(do_flag === 1){
 		return
 	} else {
 		do_flag = 1;
 	}
+
+	//headerの高さに合わせてalertを表示する
+	alert_window_style.top = headerHeighta + 10 + "px";
 
 	let alert_window = document.getElementById("alert_window");
 	let alert_text = document.getElementById("alert_text");

@@ -85,9 +85,11 @@ button {
 #alert_window {
   background-color: #f4f4f4;
   border-radius: 5px;
-  position: sticky;
+  position: fixed;
   z-index: 101;
   top: 15dvh;
+  left: 50%;
+  transform: translateX(-50%);
   width: fit-content;
   max-width: 80%;
   align-items: center;
