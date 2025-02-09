@@ -1,16 +1,16 @@
+const non_icon = document.getElementById("non_icon");
 const favorite_icon = document.getElementById("favorite_icon");
-
-//favorite_iconのスタイル適用
-favorite_icon.addEventListener("click", () => {            
-	favorite_icon.classList.toggle("click");
-})
+const favorite_btn = document.getElementById("favorite_btn");
 
 function click_icon(product_id){
 	
-	if(favorite_icon.getAttribute("class") !== "click"){
+	if(non_icon.getAttribute("class") === "view"){
 		
 		//お気に入り商品の追加
 		show_alert("お気に入りに追加しました");
+
+		favorite_icon.classList.add("view");
+		non_icon.classList.remove("view");
 
 		let xhr = new XMLHttpRequest();
 		
@@ -25,6 +25,9 @@ function click_icon(product_id){
 		
 		//お気に入り商品の削除
 		show_alert("お気に入りから削除しました");
+
+		favorite_icon.classList.remove("view");
+		non_icon.classList.add("view");
 		
 		let xhr = new XMLHttpRequest();
 			

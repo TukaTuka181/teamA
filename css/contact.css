@@ -5,7 +5,10 @@
   justify-content: center;
 }
 #main_parent a {
+  display: block;
   text-decoration: underline;
+  text-align: center;
+  margin-top: 20px;
 }
 
 #contact{
@@ -97,7 +100,6 @@ form > .input_area::placeholder{
 button{
   cursor: pointer;
   color: #000;
-
 }
 @media (max-width: 767px) {
   #contact{

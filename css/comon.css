@@ -1,4 +1,8 @@
 @charset "utf-8";
+@font-face {
+  font-family: "myfont";
+  src: url("../ZenKakuGothicAntique-Regular.ttf") format("truetype");
+}
 
 /* 共通部分
 ------------------------------- */
@@ -9,6 +13,9 @@ html {
   font-size: 100%;
   box-sizing: border-box;
   font-size: 16px;
+  font-family: "myfont";
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 html.nonscroll{
   position: fixed;
@@ -17,10 +24,12 @@ html.nonscroll{
   overflow: hidden;
 }
 body{
-  font-family: "";
   line-height: 1.7;
   color: #000;
   margin: 0;
+}
+h2{
+  font-size: 20px;
 }
 a {
   text-decoration: none;
@@ -29,6 +38,7 @@ a {
 img {
   max-width: 100%;
 }
+
 
 #main_parent{
   position: relative;
@@ -238,6 +248,8 @@ header{
 
 /* 動く背景 */
 .image-container {
+  background-color: #f7f7f7;
+  /* filter: opacity(60%); */
   position: fixed;
   z-index: -1;
   width: 100vw;
@@ -375,7 +387,7 @@ header{
 #footer_parent {
   position: relative;
   z-index: 101;
-  background-color: rgb(255, 208, 208);
+  background-color: rgb(210, 210, 210);
 }
 
 .content {

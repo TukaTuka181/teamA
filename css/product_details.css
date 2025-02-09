@@ -1,27 +1,30 @@
+main{
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
 #product_window {
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 15px;
   padding: 20px;
   margin-bottom: 30px;
-  box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 10px;
   text-align: center;
 }
 
 .pictura {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .frame {
-  width: calc(136px * 2);
-  height: calc(136px * 2);
+  width: calc(136px * 3);
+  height: calc(136px * 3);
   background-image: url("../img/gakubuti_big.png");
   background-repeat: no-repeat;
-  padding: 10px;
+  padding: 20px;
   background-size: contain;
   margin: 0;
-  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 5px;
 }
 
 .draw_area {
@@ -48,19 +51,29 @@
   border-bottom: 1px solid #000;
 }
 
-#favorite_icon {
+#favorite_btn {
   position: relative;
   bottom: 0;
   right: 0;
-  transform: translateX(350%);
+  margin: 10px 0;
   background-color: rgba(0, 0, 0, 0);
   border: none;
   z-index: 10;
   transition: color 0.5s ease;
 }
-
-#favorite_icon.click {
-  color: #ff0000;
+#non_icon{
+  display: none;
+  width: 40px;
+}
+#non_icon.view{
+  display: block;
+}
+#favorite_icon{
+  display: none;
+  width: 40px;
+}
+#favorite_icon.view{
+  display: block;
 }
 
 #favorite_icon > span {
@@ -83,39 +96,45 @@ button {
 }
 
 #alert_window {
-  background-color: #f4f4f4;
-  border-radius: 5px;
   position: fixed;
   z-index: 101;
-  top: 15dvh;
   left: 50%;
   transform: translateX(-50%);
   width: fit-content;
   max-width: 80%;
-  align-items: center;
   display: flex;
-  padding: 5px 20px;
-  margin: 10px auto;
+  flex-direction: column;
   opacity: 0;
   overflow: hidden;
+  margin: 10px auto;
+}
+.alert {
+  padding: 5px 20px;
+  margin: 10px auto;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 #alert_window.view {
   opacity: 1;
 }
 
-#alert_window span {
+.alert span {
   font-size: 2rem;
   color: #36ff4a;
   padding-right: 10px;
 }
 
-#alert_window p {
+.alert_text {
   font-size: 0.75rem;
   white-space: nowrap;
 }
 
-#alert_border {
+.alert_border {
   height: 3px;
   width: 100%;
   background-color: black;
@@ -126,21 +145,21 @@ button {
   left: 0;
 }
 
-#alert_border.view {
+.alert_border.view {
   transform: translateX(100%);
 }
 
 @media (max-width: 767px) {
   .frame {
-    width: calc(136px * 1.5);
-    height: calc(136px * 1.5);
-  }
-
-  #favorite_icon {
-    transform: translateX(200%);
+    width: calc(136px * 2);
+    height: calc(136px * 2);
+    padding: 14px;
   }
 
   .info {
     width: 100%;
+  }
+  #product_window{
+    padding: 0;
   }
 }

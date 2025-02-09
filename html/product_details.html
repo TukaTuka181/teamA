@@ -64,11 +64,6 @@
         </div>
     </header>
     <div id="alert_window">
-        <span class="material-symbols-outlined">
-            check_circle
-        </span>
-        <p id="alert_text"></p>
-        <div id="alert_border"></div>
     </div>
     <main>
         <div id="main_parent">
@@ -79,16 +74,15 @@
                             <img src="../img/pictura.png" alt="絵画">
                         </div>
                     </div>
-                    <button id="favorite_icon" onclick="click_icon('JSPでproduct_idいれてね')">
-                        <span class="material-symbols-outlined">
-                            favorite
-                        </span>
+                    <button id="favorite_btn" onclick="click_icon('JSPでproduct_idいれてね')">
+                        <img id="non_icon" class="view" src="../img/non_favorite_icon.png" alt="お気に入りでないicon">
+                        <img id="favorite_icon" src="../img/favorite_icon.png" alt="お気に入りicon">
                     </button>
                 </div>
                 <div class="info">
                     <h4 class="name">タイトル名</h4>
-                    <p class="creator">作者名</p>
                     <h4 class="price">￥値段</h4>
+                    <p class="creator">作者名</p>
                     <p class="description">
                         text text text text text text text text text text text text
                         text text text text text text text text text text text text

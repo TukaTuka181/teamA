@@ -1,31 +1,42 @@
-let do_flag = 0;
+let count = 0;
 let alert_window_style = document.getElementById("alert_window").style;
 let headerHeighta = document.querySelector("header").offsetHeight;
 
 // アラートの表示
 function show_alert(show_text) {
 
-	if(do_flag === 1){
-		return
-	} else {
-		do_flag = 1;
-	}
-
 	//headerの高さに合わせてalertを表示する
 	alert_window_style.top = headerHeighta + 10 + "px";
 
 	let alert_window = document.getElementById("alert_window");
-	let alert_text = document.getElementById("alert_text");
-	let alert_border = document.getElementById("alert_border");
+
+	// alertを追加
+	let child = document.createElement("div");
+	child.setAttribute("class", "alert");
+	child.innerHTML = `
+	<span class="material-symbols-outlined">
+		check_circle
+	</span>
+	<p class="alert_text" id="${count}">${show_text}</p>
+	<div class="alert_border" id="count${count}"></div>
+	`;
+	alert_window.append(child);
 
 	alert_window.classList.add("view");
-	alert_text.innerText = show_text;
-	alert_border.classList.add("view");
+	let new_border = document.getElementById("count"+count);
+	setTimeout(() => {
+		new_border.classList.add("view");
+	}, 10);
+	
+
+	count++;
 
 	setTimeout(() => {
-		alert_window.classList.remove("view");
-		alert_border.classList.remove("view");
-		do_flag = 0;
+		if(alert_window.childElementCount < 1){
+			alert_window.classList.remove("view");
+		}
+		alert_window.removeChild(alert_window.children[0]);
+		console.log("remove");
 	}, 2000);
 }
 

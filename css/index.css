@@ -5,7 +5,7 @@
   max-width: 100%;
   overflow: hidden;
   border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 10px;
+  box-shadow: rgba(83, 83, 83, 0.09) 5px 5px 10px;
   position: relative;
 }
 
@@ -23,15 +23,15 @@
   object-fit: cover;
 }
 
-.arrow {
-  color: rgba(0, 0, 0, 0.5);
-  font-weight: bold;
-}
-
 .swiper-pagination-bullet {
   background-color: rgba(0, 0, 0, 0.5);
   height: 15px;
   width: 15px;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 2.5rem;
 }
 
 /* 商品一覧 */
@@ -41,7 +41,7 @@
   border-radius: 15px;
   padding: 20px;
   margin: 30px 0;
-  box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 10px;
+  box-shadow: rgba(83, 83, 83, 0.09) 5px 5px 10px;
 }
 
 #products_window h3 {
@@ -87,7 +87,7 @@
   padding: 7px;
   background-size: contain;
   margin: 0;
-  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 5px;
 }
 
 .draw_area {
@@ -115,8 +115,8 @@
     width: 10px;
   }
 
-  .arrow {
-    font-weight: normal;
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 2rem;
   }
 
   #products {
