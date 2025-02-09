@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <style>
+
+	a{
+		color: black;
+		text-decoration: none;
+	}
+	body{
+		height: 100dvh;
+		width: 100dvw;
+		
+		background-size: 350dvh;
+		background-repeat: no-repeat;
+		background-position: top;
+	}
+	header,main,footer{
+		width:100dvw;
+	}
+	header,.link,#page_title,.content_title,footer,a{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.link a{
+		width: 50%;
+		text-align: center;
+	}
+	#page_title{
+		height: calc(100dvw * 0.18);
+		
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: calc(100dvw / 1051 * 1500)
+		
+	}
+	.content,header{
+		background-color: white;
+	}
+	#mask{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: white;
+		opacity: 0.8;
+	}
+	.content:nth-child(5) td:nth-child(2){
+		text-align: center;
+	}
+	.content p{
+		text-align: right;
+	}
+	.content_title{
+		text-align: center;
+	}
+	#message{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#message p{
+		padding: 10px;
+		padding-right: 0;
+		text-align: left;
+	}
+	table{
+		border-collapse: collapse;
+	}
+	.line_head{
+		text-align: center;
+	}
+	td{
+		border: solid 1px;
+	}
+	.space{
+		background-color: white;
+		opacity: 0.8;
+	}
+	footer{
+		background-color: lightgray;
+		text-align: center;
+	}
+@media screen and (min-width:1000px){
+	#company{
+		margin-left: 8dvw;
+		font-size: 35px;
+	}
+	#company,.link{
+		width: 50dvw;
+	}
+	header{
+		height: 20dvh;
+	}
+	.content *,#message{
+		width: 50dvw;
+	}
+	#message img{
+		width:15dvw;
+		height: calc(15dvw /430 * 645);
+	}
+	#message p{
+		width: calc(100% - 15dvw);
+		font-size: 19px;
+	}
+	
+	.content{
+		padding-left: 25dvw;
+		padding-bottom: 7dvh;
+	}
+	.content_title{
+		height: 10dvh;
+		font-weight: 50;
+		font-size: 20px;
+	}
+	.line_head{
+		width: 15dvw;
+		padding: 2dvh;
+	}
+	td{
+		width: 35dvw;
+		padding: 2dvh;
+	}
+	.space{
+		height: 10dvh;
+	}
+	footer{
+		height: 10dvh;
+	}
+}
+@media screen and (max-width:1000px) {
+	*{
+		font-size: 30px;
+	}
+	header{
+		height: 15dvh;
+		flex-direction: column;
+	}
+	header div{
+		width: 100dvw;
+	}
+	#company{
+		border-bottom: 1px solid;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		height: 70%;
+	}
+	.link{
+		height: 30%;
+	}
+	.link a{
+		height:100%;
+		border-right: 1px solid;
+		border-bottom: solid 1px;
+	}
+	#company p{
+		font-size: 50px;
+	}
+	.content{
+		padding: 2dvh;
+	}
+	.space{
+		height: 5dvh;
+	}
+	.content{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.content *,#message{
+		width: 85dvw;
+	}
+	#message img{
+		width: 30dvw;
+		height: calc(30dvw / 430 * 645);
+	}
+	#message p{
+		font-size: 25px;
+	}
+	.line_head{
+		width:30dvw;
+	}
+	td{
+		padding: 2dvw;
+	}
+	td:nth-child(2){
+		width:55dvw;
+	}
+	footer{
+		height: 5dvh;
+	}
+}
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <div id="company">
+            <p>（株）鍔競合</p>
+        </div>
+        <div class="link">
+            <a href="agreement.html">利用規約</a>
+            <a href="company_profile.html">企業概要</a>
+        </div>
+    </header>
+    <h1>プライバシーポリシー</h1>
+    <p class="last-updated">最終更新日：2025年1月29日</p>
+
+    <p>当社は、お客様の個人情報保護の重要性を認識し、適切な管理と保護に努めています。<br>本プライバシーポリシーでは、当社のサービス利用に関する個人情報の取扱いについて説明いたします。</p>
+
+    <h2>1. 収集する個人情報</h2>
+    <p>当社は、以下の個人情報を収集する場合があります：</p>
+    <ul>
+        <li>氏名</li>
+        <li>メールアドレス</li>
+        <li>電話番号</li>
+        <li>住所</li>
+        <li>サービス利用履歴</li>
+        <li>アクセスログ情報</li>
+        <li>クレジットカード情報</li>
+    </ul>
+
+    <h2>2. 個人情報の利用目的</h2>
+    <p>収集した個人情報は、以下の目的で利用いたします：</p>
+    <ul>
+        <li>サービスの提供および運営</li>
+        <li>お問い合わせへの対応</li>
+        <li>サービスの改善および新機能の開発</li>
+        <li>セキュリティの確保</li>
+        <li>法令に基づく対応</li>
+    </ul>
+
+    <h2>3. 個人情報の管理</h2>
+    <p>当社は、個人情報の紛失、漏洩、改ざん等を防ぐため、適切なセキュリティ対策を実施しています。また、従業員に対する教育・指導を行い、個人情報の適切な取扱いに努めています。</p>
+
+    <h2>4. 個人情報の第三者提供</h2>
+    <p>当社は、以下の場合を除き、お客様の同意なく個人情報を第三者に提供することがあります：</p>
+    <ul>
+        <li>法令に基づく場合</li>
+        <li>人の生命、身体または財産の保護のために必要な場合</li>
+        <li>公衆衛生の向上または児童の健全な育成の推進のために必要な場合</li>
+    </ul>
+
+    <h2>5. クッキーの使用について</h2>
+    <p>当社のウェブサイトでは、サービス向上のためにクッキーを使用しています。ブラウザの設定により、クッキーの使用を制限することが可能です。</p>
+
+    <h2>6. 個人情報の開示・訂正・削除</h2>
+    <p>お客様ご自身の個人情報の開示、訂正、削除をご希望の場合は、本人確認の上で対応いたします。下記のお問い合わせ窓口までご連絡ください。</p>
+
+    <h2>7. プライバシーポリシーの変更</h2>
+    <p>本プライバシーポリシーの内容は、法令の変更や当社のサービス変更に伴い、予告なく変更される場合があります。変更があった場合は、当ウェブサイトでお知らせいたします。</p>
+
+    <h2>8. お問い合わせ窓口</h2>
+    <p>個人情報の取扱いに関するお問い合わせは、下記までご連絡ください：</p>
+    <p>
+        会社名：(株)鍔競合<br>
+        住所：群馬県太田市東長岡町123456789<br>
+        メール：oibc35260@ojs.ac.jp<br>
+        電話：03-1145-14810<br>
+        受付時間：平日9:00～17:00（土日祝日・年末年始を除く）
+    </p>
+</body>
+</html>

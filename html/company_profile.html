@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>鍔競合</title>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+		scrollbar-width: none;
+	}
+	a{
+		color: black;
+		text-decoration: none;
+	}
+	body{
+		height: 100dvh;
+		width: 100dvw;
+		background-image: url("../img/background_image.jpg");
+		background-size: 350dvh;
+		background-repeat: no-repeat;
+		background-position: top;
+	}
+	header,main,footer{
+		width:100dvw;
+	}
+	header,.link,#page_title,.content_title,footer,a{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.link a{
+		width: 50%;
+		text-align: center;
+	}
+	#page_title{
+		height: calc(100dvw * 0.18);
+		background-image: url("../img/business.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		/* height: calc(100dvw / 1051 * 1500) */
+		
+	}
+	.content,header{
+		background-color: white;
+	}
+	#mask{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: white;
+		opacity: 0.8;
+	}
+	.content:nth-child(5) td:nth-child(2){
+		text-align: center;
+	}
+	.content p{
+		text-align: right;
+	}
+	.content_title{
+		text-align: center;
+	}
+	#message{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#message p{
+		padding: 10px;
+		padding-right: 0;
+		text-align: left;
+	}
+	table{
+		border-collapse: collapse;
+	}
+	.line_head{
+		text-align: center;
+	}
+	td{
+		border: solid 1px;
+	}
+	.space{
+		background-color: white;
+		opacity: 0.8;
+	}
+	footer{
+		background-color: lightgray;
+		text-align: center;
+	}
+@media screen and (min-width:1000px){
+	#company{
+		margin-left: 8dvw;
+		font-size: 35px;
+	}
+	#company,.link{
+		width: 50dvw;
+	}
+	header{
+		height: 20dvh;
+	}
+	.content *,#message{
+		width: 50dvw;
+	}
+	#message img{
+		width:15dvw;
+		height: calc(15dvw /430 * 645);
+	}
+	#message p{
+		width: calc(100% - 15dvw);
+		font-size: 19px;
+	}
+	
+	.content{
+		padding-left: 25dvw;
+		padding-bottom: 7dvh;
+	}
+	.content_title{
+		height: 10dvh;
+		font-weight: 50;
+		font-size: 20px;
+	}
+	.line_head{
+		width: 15dvw;
+		padding: 2dvh;
+	}
+	td{
+		width: 35dvw;
+		padding: 2dvh;
+	}
+	.space{
+		height: 10dvh;
+	}
+	footer{
+		height: 10dvh;
+	}
+}
+@media screen and (max-width:1000px) {
+	*{
+		font-size: 30px;
+	}
+	header{
+		height: 15dvh;
+		flex-direction: column;
+	}
+	header div{
+		width: 100dvw;
+	}
+	#company{
+		border-bottom: 1px solid;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		height: 70%;
+	}
+	.link{
+		height: 30%;
+	}
+	.link a{
+		height:100%;
+		border-right: 1px solid;
+		border-bottom: solid 1px;
+	}
+	#company p{
+		font-size: 50px;
+	}
+	.content{
+		padding: 2dvh;
+	}
+	.space{
+		height: 5dvh;
+	}
+	.content{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.content *,#message{
+		width: 85dvw;
+	}
+	#message img{
+		width: 30dvw;
+		height: calc(30dvw / 430 * 645);
+	}
+	#message p{
+		font-size: 25px;
+	}
+	.line_head{
+		width:30dvw;
+	}
+	td{
+		padding: 2dvw;
+	}
+	td:nth-child(2){
+		width:55dvw;
+	}
+	footer{
+		height: 5dvh;
+	}
+}
+
+</style>
+</head>
+<body>
+	<header>
+		<div id="company">
+			<p>（株）鍔競合</p>
+		</div>
+		<div class="link">
+			<a href="policy.html">プライバシーポリシー</a>
+			<a href="agreement.html">利用規約</a>
+		</div>
+	</header>
+	<main>
+		<div id="page_title">
+			<div id="mask">
+				企業概要
+			</div>
+		</div>
+		<div class="space"></div>
+		<div class="content">
+			<h1 class="content_title">社長挨拶</h1>
+			<div>
+				<div id="message"> 
+					<img src="../img/president.jpg">
+					<p>
+						弊社のホームページをご覧いただき、
+						誠にありがとうございます。&nbsp;
+						私たちは「お客様に寄り添い、共に未来を創る」を理念に掲げ、
+						日々邁進しております。&nbsp;
+						これまで、多くの皆様のご支援により成長を続けてまいりました。&nbsp;
+						今後も、社会に貢献し続ける企業であるため、
+						革新と挑戦を恐れず、
+						新たな価値を創出してまいります。&nbsp;
+						皆様のご期待に応えられるよう、
+						全社員一丸となって努めてまいりますので、
+						引き続きご指導ご鞭撻を賜りますようお願い申し上げます。
+					</p>
+				</div>
+				<p>代表取締役<br>【鍔 琉斗】</p>
+			</div>
+		</div>
+		<div class="space"></div>
+		<div class="content">
+			<h1 class="content_title">企業概要</h1>
+			<table>
+				<tr><td class="line_head">社名</td><td>（株）鍔競合</td></tr>
+				<tr><td class="line_head">資本金</td><td>１億円</td></tr>
+				<tr><td class="line_head">社員数</td><td>３６名</td></tr>
+			</table>
+		</div>
+		<div class="space"></div>
+		<div class="content">
+			<h1 class="content_title">社歴</h1>
+			<table>	
+				<tr><td class="line_head">2002年</td><td>群馬県太田市に本社設立</td></tr>
+				<tr><td class="line_head">2005年</td><td>東京都千代田区に東京オフィス設置</td></tr>
+				<tr><td class="line_head">2010年</td><td>大阪府大阪市に関西オフィス設置</td></tr>
+				<tr><td class="line_head">2025年</td><td>
+					本社を新社屋に移転　　　　　　　　　　　<br>
+					東京オフィスを閉鎖、北海道オフィスを開設<br>
+					関西オフィスを閉鎖、岡山オフィスを開設　<br>
+					株式の公開を検討　　　　　　　　　　　　
+				</td></tr>
+				<tr><td class="line_head">現在に至る</td><td></td></tr>
+			</table>
+		</div>
+		<div class="space"></div>
+	</main>
+	<footer>&copy;（株）鍔競合</footer>
+</body>
+</html>
