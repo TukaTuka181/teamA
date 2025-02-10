@@ -17,8 +17,8 @@ main{
 }
 
 .frame {
-  width: calc(136px * 3);
-  height: calc(136px * 3);
+  height: 80vh;
+  aspect-ratio: 1/1;
   background-image: url("../img/gakubuti_big.png");
   background-repeat: no-repeat;
   padding: 20px;
