@@ -1,4 +1,4 @@
-//購入確認のポイントを使うの欄に入力したポイントを
+//購入確認の"ポイントを使う"の欄に入力したポイントを
 //ご請求金額のところに表示する
 
 const details_amount_points = document.querySelectorAll(".details_amount_point");

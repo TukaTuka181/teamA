@@ -1,3 +1,5 @@
+//注文確認画面でクレジットカードを追加したときの処理
+
 import {hidden_payment} from "../js/payment_modal_window.js";
 
 const req_name = document.getElementById("credit_card_name");

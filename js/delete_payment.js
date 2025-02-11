@@ -1,4 +1,5 @@
-//クレジットカードの削除
+//お支払い情報画面の削除ボタンを押したときの処理
+
 function delete_payment(card_id){
 
 	//キャンセル
@@ -16,7 +17,7 @@ function delete_payment(card_id){
 	//サーバーサイドに送るデータ
 	let req_data = `card_id=${card_id}`;
 
-	xhr.open('POST', '/pictsuba/api/****');
+	xhr.open('POST', '/pictsuba/api/rm-card');
 	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
 	xhr.send(req_data);

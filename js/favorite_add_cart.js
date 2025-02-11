@@ -1,4 +1,5 @@
-//商品をカートに追加
+//お気に入り画面の”カートに入れる”ボタンの処理
+
 function add_cart(product_id){
 
 	show_alert("カートに追加しました");
@@ -11,14 +12,14 @@ function add_cart(product_id){
 	
 	// //お気に入りからの削除
 	let del_favorite_xhr = new XMLHttpRequest();
-	del_favorite_xhr.open('POST', '/pictsuba/api/****');
+	del_favorite_xhr.open('POST', '/pictsuba/api/rm-favorite');
 	del_favorite_xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 	
 	del_favorite_xhr.send(req_data);
 
 	// //カートに追加
 	let add_cart_xhr = new XMLHttpRequest();
-	add_cart_xhr.open('POST', '/pictsuba/api/****');
+	add_cart_xhr.open('POST', '/pictsuba/api/cart');
 	add_cart_xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 	
 	add_cart_xhr.send(req_data);

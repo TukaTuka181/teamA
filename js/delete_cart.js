@@ -14,7 +14,7 @@ function delete_cart(cart_id){
     // //サーバーサイドに送るデータ
     let req_data = `cart_id=${cart_id}`;
 
-    xhr.open('POST', '/pictsuba/api/****');
+    xhr.open('POST', '/pictsuba/api/rm-cart');
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
     xhr.send(req_data);

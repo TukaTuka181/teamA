@@ -1,4 +1,5 @@
-//商品をカートに追加する
+//商品詳細画面の”カートに入れる”ボタンの処理
+
 function add_cart(product_id){
 	
 	show_alert("カートに追加しました");
@@ -8,7 +9,7 @@ function add_cart(product_id){
 	//サーバーサイドに送るデータ
 	let req_data = `product_id=${product_id}`;
 	
-	xhr.open('POST', '/pictsuba/api/****');
+	xhr.open('POST', '/pictsuba/api/cart');
 	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 	
 	xhr.send(req_data);

@@ -1,3 +1,5 @@
+//カートに追加ボタンやお気に入り追加ボタンを押したときに出すアラートの処理
+
 let count = 0;
 let alert_window_style = document.getElementById("alert_window").style;
 let headerHeighta = document.querySelector("header").offsetHeight;
@@ -31,6 +33,7 @@ function show_alert(show_text) {
 
 	count++;
 
+	//2秒後に消す
 	setTimeout(() => {
 		if(alert_window.childElementCount < 1){
 			alert_window.classList.remove("view");

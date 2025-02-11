@@ -1,4 +1,5 @@
-//住所情報の削除
+//住所情報画面の削除ボタンを押したときの処理
+
 function delete_address(address_id){
 
 	//キャンセル
@@ -16,7 +17,7 @@ function delete_address(address_id){
 	//サーバーサイドに送るデータ
 	let req_data = `address_id=${address_id}`;
 
-	xhr.open('POST', '/pictsuba/api/****');
+	xhr.open('POST', '/pictsuba/api/rm-address');
 	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
 	xhr.send(req_data);

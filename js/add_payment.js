@@ -1,3 +1,5 @@
+//お支払い情報ページでクレジットカードを追加する処理
+
 import {hidden_payment} from "./payment_modal_window.js";
 
 const req_name = document.getElementById("credit_card_name");
@@ -7,7 +9,6 @@ const req_expire_year = document.getElementById("expire_year");
 const req_security_code = document.getElementById("security_code");
 const payment_form = document.getElementById("payment_form");
 
-//クレジットカード情報の追加
 payment_form.addEventListener("submit", () => {
 	
 	let xhr = new XMLHttpRequest();

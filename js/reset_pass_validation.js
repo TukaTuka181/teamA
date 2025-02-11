@@ -1,3 +1,5 @@
+//パスワード再設定画面の入力チェック
+
 let reset_password_form = document.getElementById("reset_password_form");
 let registation_form_flag = 0;
 let check_password = document.getElementById("check_password");
@@ -5,6 +7,7 @@ let check_eye_icon = document.getElementById("check_eye_icon");
 let password = document.getElementById("password");
 let eye_icon = document.getElementById("eye_icon");
 
+//フォームに誤りがあったらフォームを送信できないようにする
 reset_password_form.addEventListener("submit", (event) => {
 	console.log(registation_form_flag);
 	if(registation_form_flag === 1){
@@ -12,6 +15,7 @@ reset_password_form.addEventListener("submit", (event) => {
 	}
 })
 
+//パスワードの入力チェック
 password.addEventListener("input", () => {
 	let error_msg = document.getElementById("password_error");
 	let pattern = new RegExp(`^${password.pattern}$`);

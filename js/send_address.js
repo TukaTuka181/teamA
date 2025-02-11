@@ -1,3 +1,5 @@
+//注文確認画面で住所を追加したときの処理
+
 import {hidden_address} from "./address_modal_window.js";
 const req_zip_code = document.getElementById("zip_code");
 const req_pref = document.getElementById("pref");

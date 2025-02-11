@@ -1,4 +1,5 @@
 //お気に入り商品の削除
+
 function delete_favorite(product_id){
 
 	let delete_button = document.getElementById(product_id);
@@ -10,7 +11,7 @@ function delete_favorite(product_id){
 	//サーバーサイドに送るデータ
 	let req_data = `product_id=${product_id}`;
 	
-	xhr.open('POST', '/pictsuba/api/****');
+	xhr.open('POST', '/pictsuba/api/rm-favorite');
 	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 	
 	xhr.send(req_data);

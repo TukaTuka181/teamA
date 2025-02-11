@@ -1,5 +1,5 @@
 // 確認画面のお支払い方法選択時、クレジットカード支払いを選んだら
-// 登録されているクレジットカードを表示する
+// 登録されているクレジットカードを表示する処理
 // 表示時はrequiredを付ける
 
 let payment_radios = document.getElementsByName("payment_radio");

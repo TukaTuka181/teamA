@@ -1,3 +1,5 @@
+//新規登録画面の入力チェック
+
 let info_form = document.getElementById("info_form");
 let registation_form_flag = 0;
 let check_password = document.getElementById("check_password");
@@ -9,6 +11,7 @@ let birth_day = document.getElementById("birth_day");
 let age = document.getElementById("age");
 let phone = document.getElementById("phone");
 
+//フォームに誤りがあったらフォームを送信できないようにする
 info_form.addEventListener("submit", (event) => {
 	console.log(registation_form_flag);
 	if(registation_form_flag === 1){
@@ -16,6 +19,7 @@ info_form.addEventListener("submit", (event) => {
 	}
 })
 
+//パスワードの入力チェック
 password.addEventListener("input", () => {
 	let error_msg = document.getElementById("password_error");
 	let pattern = new RegExp(`^${password.pattern}$`);
@@ -109,6 +113,7 @@ birth_day.addEventListener("input", () => {
     age.value = years;
 });
 
+//電話番号の入力チェック
 phone.addEventListener("input", () => {
 	let tel_error = document.getElementById("tel_error");
 	let pattern = new RegExp(`^${phone.pattern}$`);

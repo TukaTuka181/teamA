@@ -1,3 +1,6 @@
+//全てのページに共通する処理
+
+//モバイル版のハンバーガメニューの表示非表示の切り替え処理
 document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobile_menu');

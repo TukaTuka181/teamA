@@ -1,3 +1,5 @@
+//住所情報ページで住所をサーバ側に送る処理
+
 import {hidden_address} from "./address_modal_window.js";
 const req_zip_code = document.getElementById("zip_code");
 const req_pref = document.getElementById("pref");
@@ -9,6 +11,7 @@ const address_form = document.getElementById("address_form");
 //住所情報の追加
 address_form.addEventListener("submit", () => {
 
+    //郵便番号の検索結果がない時、送信を止める
     if(address_form_flag === 1){
         return;
     }
