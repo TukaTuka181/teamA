@@ -36,7 +36,6 @@ function show_alert(show_text) {
 			alert_window.classList.remove("view");
 		}
 		alert_window.removeChild(alert_window.children[0]);
-		console.log("remove");
 	}, 2000);
 }
 

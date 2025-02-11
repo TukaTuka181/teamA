@@ -1,0 +1,20 @@
+main{
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+#main_parent {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#search_icon{
+	font-size: 96px;
+}
+
+@media (max-width: 767px) {
+	#product_window{
+		padding: 0;
+	}
+}
+  
