@@ -12,7 +12,7 @@ modal_window.addEventListener("click", () => {
     error_msg.innerText = "";
 });
 
-zip_code.addEventListener("change", () => {
+zip_code.addEventListener("input", () => {
 
     let xhr = new XMLHttpRequest();
     xhr.open('GET', 'https://zip-cloud.appspot.com/api/search?zipcode=' + zip_code.value);
