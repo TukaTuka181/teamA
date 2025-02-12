@@ -165,7 +165,11 @@
                         <h3 class="total">￥＊＊＊</h3>
                     </div>
                 </section>
-                <a href="./order_history.html" id="main_bottom">
+                <button id="delete_btn" onclick="delete_order('jspでorder_id入れてね')">
+                    この注文を取り消す
+                </button>
+
+                <a href="./order_history.html" id="back_anchor">
                     <span class="material-symbols-outlined">
                         chevron_left
                     </span>
@@ -189,6 +193,7 @@
             <p id="copy_right">&copy;pictsuba.com</p>
         </div>
     </footer>
+    <script src="../js/delete_order.js"></script>
     <script src="../js/comon.js"></script>
 </body>
 </html>

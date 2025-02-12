@@ -14,9 +14,18 @@
 .choosed *{
     margin: 0;
 }
-#main_bottom{
-    margin: 0 auto;
+#delete_btn{
+    color: red;
+    font-size: 1rem;
+    margin: 5px 0;
+    background: none;
+    border: none;
+    text-decoration: underline;
+}
+#back_anchor{
+    margin: 5px 0;
     display: flex;
-	justify-content: center;
-	border-bottom: 1px solid;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
