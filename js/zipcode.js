@@ -1,5 +1,3 @@
-//郵便番号検索APIへのアクセス処理
-
 const close_icons = document.getElementById("address_close_icon");
 const modal_window = document.getElementById("address_modal_window");
 const zip_code = document.getElementById("zip_code");

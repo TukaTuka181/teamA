@@ -20,7 +20,7 @@ payment_form.addEventListener("submit", () => {
 	req_data += `year=${req_expire_year.value}&`;
     req_data += `security_code=${req_security_code.value}`;
 
-	xhr.open('POST', '/pictsuba/api/card_id.json');
+	xhr.open('POST', '/api/card_id.json');
 	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
 	xhr.onload = function() {

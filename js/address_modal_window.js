@@ -1,5 +1,3 @@
-//住所追加のモーダルウィンドウの管理
-
 const address_add_button = document.getElementById("address_add_button");
 const address_close_icon = document.getElementById("address_close_icon");
 const address_modal_window = document.getElementById("address_modal_window");

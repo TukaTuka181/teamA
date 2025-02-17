@@ -1,6 +1,3 @@
-//クレジットカード追加フォームの入力チェック
-
-//クレジットカード番号の入力チェック
 let vali_number = document.getElementById("credit_card_number");
 
 vali_number.addEventListener("input", () => {
@@ -14,7 +11,6 @@ vali_number.addEventListener("input", () => {
 	}
 });
 
-//有効期限の月の入力チェック
 let vali_month = document.getElementById("expire_month");
 
 vali_month.addEventListener("input", () => {
@@ -28,7 +24,6 @@ vali_month.addEventListener("input", () => {
 	}
 });
 
-//有効期限の年の入力チェック
 let vali_year = document.getElementById("expire_year");
 
 vali_year.addEventListener("input", () => {
@@ -42,7 +37,6 @@ vali_year.addEventListener("input", () => {
 	}
 });
 
-//セキュリティコードの入力チェック
 let vali_code = document.getElementById("security_code");
 
 vali_code.addEventListener("input", () => {
