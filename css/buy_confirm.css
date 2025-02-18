@@ -65,6 +65,7 @@ section{
 
 .section_title{
     display: flex;
+    align-items: center;
 }
 .section_title h3{
     margin: 0;

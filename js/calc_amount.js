@@ -13,8 +13,8 @@ const show_postage =document.getElementById("show_postage");
 const postage = 500;
 
 window.onload = () => {
-	show_product_total.innerText = product_total.value;
-	show_postage.innerText = postage;
+	show_product_total.innerText = product_total.value + "円";
+	show_postage.innerText = postage + "円";
 
 	calc_amount(Number(product_total.value), Number(postage), Number(point.value));
 };
@@ -43,5 +43,5 @@ point.addEventListener("change", (event)=>{
 });
 
 function calc_amount(product_total, postage, point){
-	total_amount.innerText = product_total + postage - point;
+	total_amount.innerText = product_total + postage - point + "円";
 }
