@@ -29,7 +29,6 @@
 .circle {
     width: 40px;
     aspect-ratio: 1;
-
     border: 2px solid #ccc;
     border-radius: 50%;
     display: flex;
@@ -80,7 +79,7 @@ section{
 .product {
     display: flex;
     justify-content: center;
-    margin: 40px 20px;
+    margin: 40px 0px;
     position: relative;
 }
 .info {
