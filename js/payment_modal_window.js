@@ -1,4 +1,4 @@
-// クレジットカード登録ウィンドウを表示する
+//クレジットカード追加のモーダルウィンドウの管理
 
 const payment_add_button = document.getElementById("payment_add_button");
 const payment_close_icon = document.getElementById("payment_close_icon");

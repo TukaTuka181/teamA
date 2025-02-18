@@ -1,3 +1,5 @@
+//topページのバナーの設定
+
 const mySwiper = new Swiper('.swiper', {
     slidesPerView: 1,
     spaceBetween: 24,

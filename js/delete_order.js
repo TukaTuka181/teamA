@@ -11,9 +11,8 @@ function delete_order(order_id){
 	//サーバーサイドに送るデータ
 	let req_data = `order_id=${order_id}`;
 
-	xhr.open('POST', '/api/rm-order');
+	xhr.open('POST', '/pictsuba/api/****');
 	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
 	xhr.send(req_data);
-	setTimeout(() => {window.location.href = "/pictsuba/order-history";},500)
 }

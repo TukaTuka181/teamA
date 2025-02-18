@@ -1,3 +1,5 @@
+//住所追加フォームの入力チェック処理
+
 let zip = document.getElementById("zip_code");
 
 zip.addEventListener("input", () => {

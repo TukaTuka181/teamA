@@ -25,7 +25,7 @@ address_form.addEventListener("submit", () => {
     req_data += `street=${req_street.value}&`;
     req_data += `building=${req_building.value}`;
 
-    xhr.open('POST', '/api/address_id.json');
+    xhr.open('POST', '/pictsuba/api/address_id.json');
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
     xhr.onload = function() {

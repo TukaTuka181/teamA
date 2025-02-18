@@ -1,3 +1,5 @@
+//商品詳細画面でお気に入りアイコンをクリックしたときの処理
+
 const non_icon = document.getElementById("non_icon");
 const favorite_icon = document.getElementById("favorite_icon");
 const favorite_btn = document.getElementById("favorite_btn");
@@ -17,7 +19,7 @@ function click_icon(product_id){
 		//サーバーサイドに送るデータ
 		let req_data = `product_id=${product_id}`;
 		
-		xhr.open('POST', '/api/favorite');
+		xhr.open('POST', '/pictsuba/api/favorite');
 		xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 		
 		xhr.send(req_data);
@@ -34,7 +36,7 @@ function click_icon(product_id){
 		//サーバーサイドに送るデータ
 		let req_data = `product_id=${product_id}`;
 		
-		xhr.open('POST', '/api/rm-favorite');
+		xhr.open('POST', '/pictsuba/api/rm-favorite');
 		xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 		
 		xhr.send(req_data);
