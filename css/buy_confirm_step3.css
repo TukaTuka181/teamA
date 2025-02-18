@@ -51,3 +51,9 @@
 #main_bottom a{
     text-decoration: underline;
 }
+#fake_msg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+}
